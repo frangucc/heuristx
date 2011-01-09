@@ -1,0 +1,433 @@
+<% content_for :page_title, "Features"%>
+
+<% content_for :head do -%>
+  <%= javascript_tag do -%>
+    function ieContinue(){
+      $.cookie('allow-ie', true);
+      location.reload(true);
+    }
+    
+    function runIt() {
+      $("#map_bg").hide();
+      $("#map_bg").animate({left:'-=200'},1000);
+      $("#map_bg").hide("slow");
+      $("#map_bg").show(1200);
+      $("#map_bg").slideDown("normal");
+      $("#project_links").show("1200", runBubbleRedSml).delay(1800);
+      $("#map-legend").hide();
+      $("#map-skills").hide();
+      $(".one").hide();
+      $(".two").hide();
+      $(".three").hide();
+      $(".four").hide();
+      $(".five").hide();
+      $(".six").hide();
+      $("#map-pie").hide();
+      $(".bubble-illustrator-sml").hide();
+      $(".bubble-illustrator-med").hide();
+      $(".bubble-illustrator-lrg").hide();
+      $(".bubble-ae-sml").hide();
+      $(".bubble-ae-med").hide();
+      $(".bubble-ae-lrg").hide();
+      $(".bubble-rails-sml").hide();
+      $(".bubble-rails-med").hide();
+      $(".bubble-rails-lrg").hide();
+      $(".bubble-net-sml").hide();
+      $(".bubble-net-med").hide();
+      $(".bubble-net-lrg").hide();
+      $(".bubble-js-sml").hide();
+      $(".bubble-js-med").hide();
+      $(".bubble-js-lrg").hide();
+      $(".bubble-php-sml").hide();
+      $(".bubble-php-med").hide();
+      $(".bubble-php-lrg").hide();
+      $(".bubble-html-sml").hide();
+      $(".bubble-html-med").hide();
+      $(".bubble-html-lrg").hide();
+    }
+    
+    // motion initial bubbles
+    function runBubbleRedSml() {
+      $("#map-legend").delay(2800).show(1200).fadeIn(400).slideDown("fast");
+      $("#map-skills").delay(2800).fadeIn(400).animate({left:'+=20'},3000);
+      $(".one").delay(3800).slideDown("slow");
+      $(".two").delay(4100).slideDown("slow");
+      $(".three").delay(4300).slideDown("slow");
+      $(".four").delay(4500).slideDown("slow");
+      $(".five").delay(4800).slideDown("slow");
+      $(".six").delay(5000).slideDown("slow");
+      
+      // set red-test
+      $(".bubble-red-sml").delay(1800).fadeIn(400).animate({left:'-=200'},3000);
+      $(".bubble-red-sml").show("3200", runBubbleWhiteLrg);
+      $(".toggleFlash").addClass('legendOn');
+      $(".bubble-red-sml").slideDown("normal");
+      
+      // set photoshop
+      $(".bubble-photoshop-sml").delay(1800).fadeIn(400).animate({left:'-=200'},3000);
+      $(".bubble-photoshop-sml").show("3200", runBubbleWhiteLrg);
+      $(".togglePhotoshop").addClass('legendOn');
+      $(".bubble-photoshop-sml").slideDown("normal");
+      
+      $(".bubble-photoshop-med").delay(1800).fadeIn(400).animate({left:'-=200'},3000);
+      $(".bubble-photoshop-med").show("3200", runBubbleWhiteLrg);
+      $(".togglePhotoshop").addClass('legendOn');
+      $(".bubble-photoshop-med").slideDown("normal");
+      
+      $(".bubble-photoshop-lrg").delay(1800).fadeIn(400).animate({left:'-=200'},3000);
+      $(".bubble-photoshop-lrg").show("3200", runBubbleWhiteLrg);
+      $(".togglePhotoshop").addClass('legendOn');
+      $(".bubble-photoshop-lrg").slideDown("normal");
+      
+      $("#map-pie").delay(4800).fadeIn(400).animate({left:'+=20'},3000);
+    }
+    
+    function runBubbleWhiteLrg() {
+      // alert("helo");
+      $(".bubble-white-lrg").delay(1800).animate({top:'-=200'}, {opacity: .4},3000);
+      $(".bubble-white-lrg").css({ opacity: 0.8 }).show("3200", runBubblePhotoshop);
+      $(".bubble-white-lrg").slideDown("normal");
+    }
+    
+    function runBubblePhotoshop() {
+      // alert("helo");
+      
+      $(".bubble-photoshop-sml").show(3200);
+      $(".bubble-photoshop-sml").slideDown("normal");
+      
+      $(".bubble-photoshop-med").show(3200);
+      $(".bubble-photoshop-med").slideDown("normal");
+      
+      $(".bubble-photoshop-lrg").show(3200);
+      $(".bubble-photoshop-lrg").slideDown("normal");
+    }
+    
+    function runLinks(){}
+    
+    function runBubbles(){}
+    
+  <% end -%>
+<% end -%>
+<% content_for :head_js_ready do -%>
+$().framerate({framerate: 30});
+
+if(!$.cookie('allow-ie') && jQuery.browser.msie && jQuery.browser.version.substr(0,1) >= 7){
+  $(".mk_features_main").hide();
+  $("#non_ie_only").show();
+}
+else {
+  $("#non_ie_only").html("");
+  $("#non_ie_only").hide();
+
+  // switches on and off dots
+  $('.toggleFlash').click().toggle(function() {
+    $(".bubble-red-sml").hide();
+    $(".toggleBubbleRedSml").removeClass('legendOn');
+  }, function() {
+    $(".bubble-red-sml").show();
+    $(".toggleBubbleRedSml").addClass('legendOn');
+  });
+  
+  $('.togglePhotoshop').click().toggle(function() {
+    $(".bubble-photoshop-sml").hide();
+    $(".bubble-photoshop-med").hide();
+    $(".bubble-photoshop-lrg").hide();
+    $(".togglePhotoshop").removeClass('legendOn');
+  }, function() {
+    $(".bubble-photoshop-sml").show();
+    $(".bubble-photoshop-med").show();
+    $(".bubble-photoshop-lrg").show();
+    $(".togglePhotoshop").addClass('legendOn');
+  });
+    
+  $('.toggleIllustrator').click().toggle(function() {
+    $(".bubble-illustrator-sml").hide();
+    $(".bubble-illustrator-med").hide();
+    $(".bubble-illustrator-lrg").hide();
+    $(".toggleIllustrator").removeClass('legendOn');
+  }, function() {
+    $(".bubble-illustrator-sml").show();
+    $(".bubble-illustrator-med").show();
+    $(".bubble-illustrator-lrg").show();
+    $(".toggleIllustrator").addClass('legendOn');
+  });
+  
+  $('.toggleAE').click().toggle(function() {
+    $(".bubble-ae-sml").hide();
+    $(".bubble-ae-med").hide();
+    $(".bubble-ae-lrg").hide();
+    $(".toggleAE").removeClass('legendOn');
+  }, function() {
+    $(".bubble-ae-sml").show();
+    $(".bubble-ae-med").show();
+    $(".bubble-ae-lrg").show();
+    $(".toggleAE").addClass('legendOn');
+  });
+  
+  $('.toggleRails').click().toggle(function() {
+    $(".bubble-rails-sml").hide();
+    $(".bubble-rails-med").hide();
+    $(".bubble-rails-lrg").hide();
+    $(".toggleRails").removeClass('legendOn');
+  }, function() {
+    $(".bubble-rails-sml").show();
+    $(".bubble-rails-med").show();
+    $(".bubble-rails-lrg").show();
+    $(".toggleRails").addClass('legendOn');
+  });
+  
+  $('.toggleNet').click().toggle(function() {
+    $(".bubble-net-sml").hide();
+    $(".bubble-net-med").hide();
+    $(".bubble-net-lrg").hide();
+    $(".toggleNet").removeClass('legendOn');
+  }, function() {
+    $(".bubble-net-sml").show();
+    $(".bubble-net-med").show();
+    $(".bubble-net-lrg").show();
+    $(".toggleNet").addClass('legendOn');
+  });
+  
+  $('.toggleJS').click().toggle(function() {
+    $(".bubble-js-sml").hide();
+    $(".bubble-js-med").hide();
+    $(".bubble-js-lrg").hide();
+    $(".toggleJS").removeClass('legendOn');
+  }, function() {
+    $(".bubble-js-sml").show();
+    $(".bubble-js-med").show();
+    $(".bubble-js-lrg").show();
+    $(".toggleJS").addClass('legendOn');
+  });
+  
+  $('.togglePHP').click().toggle(function() {
+    $(".bubble-php-sml").hide();
+    $(".bubble-php-med").hide();
+    $(".bubble-php-lrg").hide();
+    $(".togglePHP").removeClass('legendOn');
+  }, function() {
+    $(".bubble-php-sml").show();
+    $(".bubble-php-med").show();
+    $(".bubble-php-lrg").show();
+    $(".togglePHP").addClass('legendOn');
+  });
+  
+  $('.toggleHTML').click().toggle(function() {
+    $(".bubble-html-sml").hide();
+    $(".bubble-html-med").hide();
+    $(".bubble-html-lrg").hide();
+    $(".toggleHTML").removeClass('legendOn');
+  }, function() {
+    $(".bubble-html-sml").show();
+    $(".bubble-html-med").show();
+    $(".bubble-html-lrg").show();
+    $(".toggleHTML").addClass('legendOn');
+  });
+  
+  
+  // declare all cluetips
+  $('#clue_perkspot').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_spot').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_buckfiddy').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_defyned').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_activeradius').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_dillyeo').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_chatyeo').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_trendlevel').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_atova').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_hacker').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_goldman').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_inet').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_mainsouth').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_careerbuilder').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_sologig').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_sears').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_kmart').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_manifest').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_avenue').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_flor').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_choosechicago').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_viveli').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $('#clue_careerpath').cluetip({sticky: true, closePosition: 'title', arrows: true});
+  $("#clickhere").click(function() { 
+    $("#animate1").animate({ 
+      height: "20px",
+      width: "10px" 
+    }, 1000);
+    $("#animate2").animate({ 
+      height: "50px", 
+      width: "500px" 
+    }, 1000); 
+  });
+
+  // setup everything 
+  $("#show").click(function () {
+    var n = $("#map_bg").queue("fx");
+  });
+  
+  runIt();
+  
+  $('.call').hover(function() {
+    $('.home-tout-bg').addClass('home-tout-bg-blur');
+  }, function() {
+    $('.home-tout-bg').removeClass('home-tout-bg-blur');
+  });
+  runBubbleRedSml();
+  runBubbleWhiteLrg();
+  runBubblePhotoshop();
+  runLinks();
+  runBubbles();
+}
+<% end -%>
+
+<style>
+  .bubble {display:none;}
+</style>
+<div id="non_ie_only" style="display:none;style="margin:20px;"">
+  <h1 style="font-size:20px;margin:0px 0px 10px;">To view this page, please use a different browser</h1>
+  <p><%= link_to "continue anyway", "javascript:void(0);", :onclick => "ieContinue();" %></p>
+</div>
+
+<div class="mk_features_main">
+  <div class="center-content">
+    <div id="map-legend">
+      <table cellspacing="0" cellpadding="0" border="0" class="map-legend-table">
+        <tr><td colspan="2"><h3>Applications</h3></td><td colspan="2"><h3>Industry</h3></td></tr>
+        <tr><td><div class="skill-block" style="background-color:#fbd793"></div></td><td><a href="#" class="togglePhotoshop">Photoshop</a></td><td><div class="skill-block"  style="background-color:#74009f"></div></td><td>eCommerce</td></tr>
+        <tr><td><div class="skill-block" style="background-color:#ff910f"></div></td><td><a href="#" class="toggleIllustrator">Illustrator</a></td><td><div class="skill-block"  style="background-color:#868686"></div></td><td>Affiliate Networking</td></tr>
+        <tr><td><div class="skill-block" style="background-color:#ac2602"></div></td><td><a href="#" class="toggleFlash">Flash</a></td><td><div class="skill-block"  style="background-color:#dc20ed"></div></td><td>Realestate</td></tr>
+        <tr><td><div class="skill-block" style="background-color:#e14f00"></div></td><td><a href="#" class="toggleAE">After Effects</a></td><td><div class="skill-block"  style="background-color:#ebbaef"></div></td><td>Trading</td></tr>
+         <tr><td colspan="2"><h3>Languages</h3></td><td colspan="2"><h3>Competencies</h3></td></tr>
+          <tr><td><div class="skill-block" style="background-color:#d51717"></div></td><td><a href="#" class="toggleRails">Ruby on Rails</a></td><td><div class="skill-block"  style="background-color:#fffd3e"></div></td><td>Information Retrieval</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#d5d7fc"></div></td><td><a href="#" class="toggleNet">.NET in C#</a></td><td><div class="skill-block"  style="background-color:#f8f9db"></div></td><td>Artificial Intelligence</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#696cbd"></div></td><td><a href="#" class="togglePHP">PHP</a></td><td><div class="skill-block"  style="background-color:#d8c333"></div></td><td>Machine Learning</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#0009bf"></div></td><td><a href="#" class="toggleJS">JavaScript</a></td><td><div class="skill-block"  style="background-color:#90a99c"></div></td><td>SEO, PPC, CPA</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#000000"></div></td><td><a href="#" class="toggleHTML">HTML/CSS</a></td><td><div class="skill-block"  style="background-color:#bcdbcb"></div></td><td>Interaction Design</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#fff;border:0px;"></div></td><td>&nbsp;</td><td><div class="skill-block"  style="background-color:#0e9750"></div></td><td>Information Architecture</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#fff;border:0px;"></div></td><td>&nbsp;</td><td><div class="skill-block"  style="background-color:#104429"></div></td><td>Content Strategy</td></tr>
+          <tr><td><div class="skill-block" style="background-color:#fff;border:0px;"></div></td><td>&nbsp;</td><td><div class="skill-block"  style="background-color:#663602"></div></td><td>User Experience</td></tr>
+
+      </table>
+    </div>
+
+     <div id="map-skills">
+       
+       <h1>A VISUAL RESUME</h1>
+       <p>Some works represented here were performed while under contract or freelancing at agencies.</p>
+        <div class="one">Design &amp; Architecture</div>
+        <div class="two">Programming</div>
+        <div class="three">Marketing</div>
+        <div class="four">Training</div>
+        <div class="five">Business Strategy</div>
+         <div class="six">Management</div>
+      </div>
+    
+    <div id="map_bg">
+      <div id="map-pie"></div>
+      <div id="skill-bubbles">
+        <div class="bubble-illustrator-sml" style="top:450px;left:610px;"></div>
+        <div class="bubble-illustrator-med" style="top:390px;left:320px;"></div>
+        <div class="bubble-illustrator-lrg" style="top:490px;left:460px;"></div>
+
+        <div class="bubble-ae-sml" style="top:190px;left:410px;"></div>
+        <div class="bubble-ae-med" style="top:490px;left:320px;"></div>
+        <div class="bubble-ae-lrg" style="top:430px;left:460px;"></div>  
+        
+        <div class="bubble-rails-sml" style="top:190px;left:410px;"></div>
+        <div class="bubble-rails-med" style="top:490px;left:320px;"></div>
+        <div class="bubble-rails-lrg" style="top:430px;left:560px;"></div>
+        
+        <div class="bubble-net-sml" style="top:190px;left:410px;"></div>
+        <div class="bubble-net-med" style="top:254px;left:320px;"></div>
+        <div class="bubble-net-lrg" style="top:330px;left:460px;"></div>
+        
+        <div class="bubble-php-sml" style="top:132px;left:450px;"></div>
+        <div class="bubble-php-med" style="top:542px;left:320px;"></div>
+        <div class="bubble-php-lrg" style="top:143px;left:560px;"></div>
+        
+        <div class="bubble-js-sml" style="top:190px;left:410px;"></div>
+        <div class="bubble-js-med" style="top:460px;left:320px;"></div>
+        <div class="bubble-js-lrg" style="top:430px;left:460px;"></div>
+        <div class="bubble-js-lrg" style="top:130px;left:430px;"></div>
+        <div class="bubble-js-lrg" style="top:330px;left:120px;"></div>
+   
+        <div class="bubble-html-med" style="top:393px;left:475px;"></div>
+        <div class="bubble-html-lrg" style="top:301px;left:860px;"></div>
+        <div class="bubble-html-lrg" style="top:371px;left:630px;"></div>
+        <div class="bubble-html-lrg" style="top:321px;left:360px;"></div>
+        <div class="bubble-html-lrg" style="top:171px;left:585px;"></div>
+      
+      <div class="bubble-red-sml" style="top:460px;left:610px;"></div>
+      <div class="bubble-red-sml" style="top:490px;left:320px;"></div>
+      <div class="bubble-red-sml" style="top:330px;left:560px;"></div>
+      
+      <div class="bubble-photoshop-sml" style="top:360px;left:750px;"></div>
+      <div class="bubble-photoshop-sml" style="top:160px;left:850px;"></div>
+      <div class="bubble-photoshop-sml" style="top:310px;left:1000px;"></div>
+      
+      <div class="bubble-photoshop-med" style="top:410px;left:450px;"></div>
+      <div class="bubble-photoshop-med" style="top:310px;left:600px;"></div>
+      <div class="bubble-photoshop-med" style="top:210px;left:550px;" alt="chatyeo"></div>
+      
+      <div class="bubble-photoshop-lrg" style="top:440px;left:290px;" alt="dillyeo"><div style="color:#fff;font-size:26px;font-weight:bolder;padding:2px 0 0 10px;">+</div></div>
+      <div class="bubble-photoshop-lrg" style="top:240px;left:650px;" alt="school"></div>
+      <div class="bubble-photoshop-lrg" style="top:110px;left:750px;" alt="school"></div>
+      <div class="bubble-photoshop-lrg" style="top:410px;left:750px;" alt="activeradius"></div>
+      
+      
+      <div class="bubble-white-lrg" style="top:460px;left:700px;">Industry</div>
+      <div class="bubble-white-lrg" style="top:333px;left:470px;">Agency</div>
+      <div class="bubble-white-lrg" style="top:550px;left:280px;">Startup</div>
+      </div>
+      <!-- Startup -->
+      <a id="clue_dillyeo" href="/clue_dillyeo.html" rel="/clue_dillyeo.html" class="clues"><p class="project-links" id="link_dillyeo" style="top:-140px;left:160px;">Dillyeo.com</p></a>
+      
+      <a id="clue_chatyeo" href="/clue_chatyeo.html" rel="/clue_chatyeo.html" class="clues"><p class="project-links" id="link_chatyeo" style="top:-230px;left:340px;">Chatyeo.com</p></a>
+      
+      <a id="clue_buckfiddy" href="/clue_buckfiddy.html" rel="/clue_buckfiddy.html" class="clues"><p class="project-links-sml" id="link_buckfiddy" style="top:-210px;left:280px;">Buckfiddy.com</p></a>
+      
+      <a id="clue_activeradius" href="/clue_activeradius.html" rel="/clue_activeradius.html" class="clues"><p class="project-links" id="link_activeradius" style="top:-220px;left:480px;">ActiveRaidus.com</p></a>
+      
+      <a id="clue_perkspot" href="/clue_perkspot.html" rel="/clue_perkspot.html" class="clues"><p class="project-links" id="link_perkspot" style="top:-360px;left:430px;">Perkspot.com</p></a>
+      
+      <a id="clue_defyned" href="/clue_defyned.html" rel="/clue_defyned.html" class="clues"><p class="project-links" id="link_defyned" style="top:-410px;left:330px;">Defyned</p></a>
+      
+      <a id="clue_atova" href="/clue_atova.html" rel="/clue_atova.html" class="clues"><p class="project-links" id="link_atova" style="top:-480px;left:320px;">Atova.com</p></a>
+      
+      <a id="clue_trendlevel" href="/clue_trendlevel.html" rel="/clue_trendlevel.html" class="clues"><p class="project-links" id="link_trendlevel" style="top:-450px;left:120px;">Trendlevel.com</p></a>
+      
+      <a id="clue_spot" href="/clue_spot.html" rel="/clue_spot.html" class="clues"><p class="project-links" id="link_spot" style="top:-400px;left:150px;">Spot</p></a>
+      
+      <!-- upper right school -->
+      <a id="clue_goldman" href="/clue_goldman.html" rel="/clue_goldman.html" class="clues"><p class="project-links-sml" id="link_goldman" style="top:-690px;left:543px;">Goldman Sachs</p></a>
+      <a id="clue_hacker" href="/clue_hacker.html" rel="/clue_hacker.html" class="clues"><p class="project-links-sml" id="link_hacker" style="top:-690px;left:493px;">Hacker</p></a>
+      <a id="clue_mainsouth" href="/clue_mainsouth.html" rel="/clue_mainsouth.html" class="clues"><p class="project-links-sml" id="link_mainsouth" style="top:-690px;left:593px;">Main South</p></a>
+      <a id="clue_inet" href="/clue_inet.html" rel="/clue_inet.html" class="clues"><p class="project-links-sml" id="link_inet" style="top:-660px;left:583px;">Inet+/A+ Cert</p></a>
+
+      <!-- Agency -->
+      <a id="clue_manifest" href="/clue_manifest.html" rel="/clue_manifest.html" class="clues"><p class="project-links" id="link_manifest" style="top:-590px;left:453px;">Manifest Digital</p></a>
+      <a id="clue_avenue" href="/clue_avenue.html" rel="/clue_avenue.html" class="clues"><p class="project-links" id="link_avenue" style="top:-660px;left:523px;">Avenue</p></a>
+      <a id="clue_viveli" href="/clue_viveli.html" rel="/clue_viveli.html" class="clues"><p class="project-links-sml" id="link_viveli" style="top:-710px;left:523px;">Viveli</p></a>
+      <a id="clue_choosechicago" href="/clue_choosechicago.html" rel="/clue_choosechicago.html" class="clues"><p class="project-links-sml" id="link_choosechicago" style="top:-570px;left:483px;">ChooseChicago.com</p></a>
+      <a id="clue_flor" href="/clue_flor.html" rel="/clue_flor.html" class="clues"><p class="project-links" id="link_flor" style="top:-530px;left:713px;">Flor.com</p></a>
+      
+   
+      <!-- Industry -->
+      <a id="clue_careerbuilder" href="/clue_careerbuilder.html" rel="/clue_careerbuilder.html" class="clues"><p class="project-links" id="link_careerbuilder" style="top:-570px;left:763px;">CareerBuilder</p></a>
+      <a id="clue_sears" href="/clue_sears.html" rel="/clue_sears.html" class="clues"><p class="project-links" id="link_sears" style="top:-570px;left:643px;">Sears</p></a>
+      <a id="clue_kmart" href="/clue_kmart.html" rel="/clue_kmart.html" class="clues"><p class="project-links-sml" id="link_kmart" style="top:-620px;left:763px;">Kmart</p></a>
+      <a id="clue_sologig" href="/clue_sologig.html" rel="/clue_sologig.html" class="clues"><p class="project-links-sml" id="link_sologig" style="top:-680px;left:783px;">Sologig.com</p></a>
+      <a id="clue_careerpath" href="/clue_careerpath.html" rel="/clue_careerpath.html" class="clues"><p class="project-links" id="link_careerpath" style="top:-660px;left:813px;">CareerPath.com</p></a>
+      
+    </div>
+    
+    
+    
+    <!-- a href="#" id="clickhere">click here</a>
+    <div id="animate2" style="border:1px solid black; background-color:red;">tests</div -->
+    
+    
+    
+  </div>
+</div>
+

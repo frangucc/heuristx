@@ -1,0 +1,2185 @@
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 12:44:22 -0600
+
+SyntaxError (/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:20: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
+      when "home" : :what_is_it
+                   ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:21: syntax error, unexpected keyword_when, expecting keyword_end
+      when "how-does-it-work" : :how_does_it_work
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:21: syntax error, unexpected ':', expecting keyword_end
+      when "how-does-it-work" : :how_does_it_work
+                               ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:22: syntax error, unexpected keyword_when, expecting keyword_end
+      when "how-do-i-use-it" : :how_do_i_use_it
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:22: syntax error, unexpected ':', expecting keyword_end
+      when "how-do-i-use-it" : :how_do_i_use_it
+                              ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:23: syntax error, unexpected keyword_when, expecting keyword_end
+      when "what-are-perks" : :what_are_perks
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:23: syntax error, unexpected ':', expecting keyword_end
+      when "what-are-perks" : :what_are_perks
+                             ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:24: syntax error, unexpected keyword_when, expecting keyword_end
+      when "what-is-the-technology" : :what_is_the_technology
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:24: syntax error, unexpected ':', expecting keyword_end
+      when "what-is-the-technology" : :what_is_the_technology
+                                     ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:25: syntax error, unexpected keyword_when, expecting keyword_end
+      when "customer-experience" : :customer_experience
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:25: syntax error, unexpected ':', expecting keyword_end
+      when "customer-experience" : :customer_experience
+                                  ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:26: syntax error, unexpected keyword_when, expecting keyword_end
+      when "can-i-see-a-sample" : :can_i_see_a_sample
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:26: syntax error, unexpected ':', expecting keyword_end
+      when "can-i-see-a-sample" : :can_i_see_a_sample
+                                 ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:33: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
+      when "chatyeo" : :chatyeo
+                      ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:34: syntax error, unexpected keyword_when, expecting keyword_end
+      when "baseprice" : :baseprice
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:34: syntax error, unexpected ':', expecting keyword_end
+      when "baseprice" : :baseprice
+                        ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:35: syntax error, unexpected keyword_when, expecting keyword_end
+      when "dillyeo" : :dillyeo
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:35: syntax error, unexpected ':', expecting keyword_end
+      when "dillyeo" : :dillyeo
+                      ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:36: syntax error, unexpected keyword_when, expecting keyword_end
+      when "crg" : :crg
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:36: syntax error, unexpected ':', expecting keyword_end
+      when "crg" : :crg
+                  ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:37: syntax error, unexpected keyword_when, expecting keyword_end
+      when "buckfiddy" : :buckfiddy
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:37: syntax error, unexpected ':', expecting keyword_end
+      when "buckfiddy" : :buckfiddy
+                        ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:38: syntax error, unexpected keyword_when, expecting keyword_end
+      when "homelifeperks" : :homelifeperks
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:38: syntax error, unexpected ':', expecting keyword_end
+      when "homelifeperks" : :homelifeperks
+                            ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:39: syntax error, unexpected keyword_when, expecting keyword_end
+      when "rtwo" : :rtwo
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:39: syntax error, unexpected ':', expecting keyword_end
+      when "rtwo" : :rtwo
+                   ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:40: syntax error, unexpected keyword_when, expecting keyword_end
+      when "spot" : :spot
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:40: syntax error, unexpected ':', expecting keyword_end
+      when "spot" : :spot
+                   ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:41: syntax error, unexpected keyword_when, expecting keyword_end
+      when "townclique" : :townclique
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:41: syntax error, unexpected ':', expecting keyword_end
+      when "townclique" : :townclique
+                         ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:42: syntax error, unexpected keyword_when, expecting keyword_end
+      when "activeradius" : :activeradius
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:42: syntax error, unexpected ':', expecting keyword_end
+      when "activeradius" : :activeradius
+                           ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:43: syntax error, unexpected keyword_when, expecting keyword_end
+      when "trendlevel" : :trendlevel
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:43: syntax error, unexpected ':', expecting keyword_end
+      when "trendlevel" : :trendlevel
+                         ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:44: syntax error, unexpected keyword_when, expecting keyword_end
+      when "defyned" : :defyned
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:44: syntax error, unexpected ':', expecting keyword_end
+      when "defyned" : :defyned
+                      ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:49: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (44.6ms)
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.3ms)
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 12:52:47 -0600
+
+SyntaxError (/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:60: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
+      when "coffee-table-memoirs" : :coffee_table_memoirs
+                                   ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:61: syntax error, unexpected keyword_when, expecting keyword_end
+      when "time-to-change" : :time_to_change
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:61: syntax error, unexpected ':', expecting keyword_end
+      when "time-to-change" : :time_to_change
+                             ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:67: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 12:52:50 -0600
+
+SyntaxError (/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:60: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
+      when "coffee-table-memoirs" : :coffee_table_memoirs
+                                   ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:61: syntax error, unexpected keyword_when, expecting keyword_end
+      when "time-to-change" : :time_to_change
+          ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:61: syntax error, unexpected ':', expecting keyword_end
+      when "time-to-change" : :time_to_change
+                             ^
+/Users/francescopinto/Desktop/VENTURES/heuristx/new/heuristx/app/controllers/home_controller.rb:67: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+  Processing by HomeController#home as HTML
+Rendered shared/_head.html.erb (7.1ms)
+Rendered home/home.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:53:42 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (5.6ms)
+Rendered home/features.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:43 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:43 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:43 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:43 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:43 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.1ms)
+Rendered home/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.5ms)
+Rendered home/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:48 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.8ms)
+Rendered home/index.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:49 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:53:50 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/features.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.6ms)
+Rendered home/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:52 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:53:53 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (49.0ms)
+Rendered home/features.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:54 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:54 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:54 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:54 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (7.0ms)
+Rendered home/features.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (62.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:53:57 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:54:29 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.7ms)
+Rendered home/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:54:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:54:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (5.8ms)
+Rendered home/features.html.erb within layouts/application (55.9ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:33 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 12:54:34 -0600
+  Processing by HomeController#home as HTML
+Rendered shared/_head.html.erb (5.6ms)
+Rendered home/home.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:54:34 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:54:34 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:34 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:34 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:34 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:54:44 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/features.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:54:44 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:54:44 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:54:44 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:54:44 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (5.5ms)
+Rendered home/features.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:56:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.3ms)
+Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 12:56:13 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 12:56:16 -0600
+  Processing by HomeController#tabs as HTML
+  Parameters: {"tab"=>"chatyeo"}
+Rendered home/tab_pages/_tab_chatyeo.html.erb (5.4ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ajax-tabs/dillyeo" for 127.0.0.1 at 2011-01-08 12:56:20 -0600
+  Processing by HomeController#tabs as HTML
+  Parameters: {"tab"=>"dillyeo"}
+Rendered home/tab_pages/_tab_dillyeo.html.erb (5.7ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 13:00:06 -0600
+  Processing by HomeController#home as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/home.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 107ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:00:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:00:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:00:08 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.2ms)
+Rendered home/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:08 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:08 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:00:09 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:00:09 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:09 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:09 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:00:10 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.8ms)
+Rendered home/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:00:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:00:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:11 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:00:41 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.7ms)
+Rendered home/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:00:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:00:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:42 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:00:58 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.7ms)
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:00:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:00:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:00:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:00:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (5.7ms)
+Rendered home/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:03:45 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:27 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.6ms)
+Rendered home/index.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 97ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:27 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:28 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (17.3ms)
+Rendered home/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:28 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:28 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:28 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:28 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (7.4ms)
+Rendered home/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (7.1ms)
+Rendered home/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:29 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:30 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.3ms)
+Rendered home/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:30 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (7.2ms)
+Rendered home/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (7.2ms)
+Rendered home/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:31 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (7.5ms)
+Rendered home/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/jquery-1.4.2.js" for 127.0.0.1 at 2011-01-08 13:05:32 -0600
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-1.4.2.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:32 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:32 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:32 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:32 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:05:57 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (55.1ms)
+Rendered home/index.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 13:05:58 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"chatyeo"}
+Rendered text template (0.0ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-08 13:06:04 -0600
+  Processing by HomeController#home as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/home.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:06:05 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:05 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:06:05 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:05 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:05 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:05 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+  Processing by HomeController#features as HTML
+Rendered shared/_head.html.erb (6.8ms)
+Rendered home/features.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:06 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:06:09 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (13.8ms)
+Rendered home/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 13:06:10 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"chatyeo"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 13:06:27 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"chatyeo"}
+Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:07:00 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.1ms)
+Rendered home/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:07:00 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:07:00 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:07:00 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:07:00 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:07:00 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/ajax-tabs/dillyeo" for 127.0.0.1 at 2011-01-08 13:07:01 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"dillyeo"}
+Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.2ms)
+Rendered home/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:07:07 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 13:07:08 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"chatyeo"}
+Rendered home/tab_pages/_tab_chatyeo.html.erb (7.5ms)
+Completed 200 OK in 296ms (Views: 295.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.0ms)
+Rendered home/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 13:07:51 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"chatyeo"}
+Rendered home/tab_pages/_tab_chatyeo.html.erb (16.8ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ajax-tabs/baseprice" for 127.0.0.1 at 2011-01-08 13:07:55 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"baseprice"}
+Rendered home/tab_pages/_tab_baseprice.html.erb (48.1ms)
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolio" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+  Processing by HomeController#index as HTML
+Rendered shared/_head.html.erb (6.8ms)
+Rendered home/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-01-08 13:08:58 -0600
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/francescopinto/Developer/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/ajax-tabs/chatyeo" for 127.0.0.1 at 2011-01-08 13:08:59 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"chatyeo"}
+Rendered home/tab_pages/_tab_chatyeo.html.erb (6.5ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ajax-tabs/baseprice" for 127.0.0.1 at 2011-01-08 13:09:04 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"baseprice"}
+Rendered home/tab_pages/_tab_baseprice.html.erb (3.9ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ajax-tabs/dillyeo" for 127.0.0.1 at 2011-01-08 13:09:14 -0600
+  Processing by HomeController#tabs as */*
+  Parameters: {"tab"=>"dillyeo"}
+Rendered home/tab_pages/_tab_dillyeo.html.erb (9.4ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.0ms)

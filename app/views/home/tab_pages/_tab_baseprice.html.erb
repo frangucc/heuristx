@@ -1,0 +1,77 @@
+<div class="main-tab-content">
+  <div class="tab-col-left">
+    <h2>In the Moment</h2>
+    <p>Baseprice has been a long-time idea of mine. The concept is to let people create their own sale by encouraging friends to look at, reserve or purchase products. A small MLM that pays out with credits applicable to sale items drives the sites viral/retention model.</p>
+  </div>
+  <div class="tab-col-mid">
+    <div class="tab-bullets">
+      <p class="title">Goals</p>
+      <ul>
+        <li><span>Develop a reverse auction website</span></li>
+        <li><span>Create easy to use invitation and referral tracking tools</span></li>
+        <li><span>Design MLM style referral engine</span></li>
+      </ul>
+      <p class="title">Overview</p>
+      <p>Baseprice is pioneering a new reverse auction concept that gives consumers the opportunity to create their own sale by telling friends about the deal.</p>
+      <div class="home-slideshow slideshow-two">
+        <div><%= image_tag "layout/marketing_portal/slide_baseprice_1.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_baseprice_2.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_baseprice_3.jpg", :alt => "" %></div>
+      </div>
+      <div class="clear"></div>
+      <div id="home_slide_nav2" class="home_slide_nav"></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="tab-col-right">
+    <div class="title">What's Right?</div>
+    <p>Do visit back soon as I'm preparing a sensational video Baseprice.</p>
+  </div>
+</div>
+
+<%= javascript_tag do -%>
+$(document).ready(function(){
+  
+  $().framerate({framerate: 30});
+  var rand = $('.slideshow-two > div').length;
+  $('.slideshow-two').cycle({
+    pager: '#home_slide_nav2',
+    cleartype: 1,
+    timeout:3000,
+    startingSlide: Math.floor(Math.random() * rand),
+    fx: 'none'
+  });
+  
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"});
+  var html = $(".hidden-media-widget").html();
+  $(".hidden-media-widget").remove();
+  $("#connect_and_exchange_wrapper").html(html);
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 1000);
+  
+  $(".mast-text").hide();
+  $(".mast-text").slideDown("slow");
+  
+});
+<% end -%>
+
+<!-- mod/hack -->
+<div class="hidden-media-widget" style="dispay:none;">
+  <div class="center-content exchange-bg">
+    <div class="content-tab-navigation">
+      <div class="tab-left-link-white">
+        <%= link_to image_tag("layout/marketing_portal/arrow_back-white.png", :alt =>"") + " Previous Project","javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 0);return false;" %>
+      </div>
+      <div class="tab-right-link-white">
+        <%= link_to ("Next Project " + image_tag("layout/marketing_portal/arrow_next-white.png", :alt =>"")).html_safe ,"javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 2);return false;" %>
+      </div>
+    </div>
+    <div class="mast-bg-baseprice" >
+      <div class="mast-text">
+        <h1>CONCEPTUAL</h1>
+        <p>Baseprice is an idea I have for something really fun.</p>
+        <div><a href="http://www.appsbyrequest.com/chart"><%= image_tag "layout/marketing_portal/mast_baseprice_btn.jpg", :alt => "" %></a></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

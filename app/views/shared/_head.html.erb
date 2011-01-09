@@ -1,0 +1,28 @@
+<head>
+  <title><%= (yield :page_title).present? ? "Heuristx | " + (yield :page_title) : "Heuristx" %></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <%= stylesheet_link_tag "style", "jquery-ui", "facebox/facebox", "jScrollPane" %>
+  <%= javascript_include_tag :defaults, "jquery-1.4.2.js", "jquery.cycle.min", "cluetip", "preload", "facebox/facebox", "jquery-ui", "framerate", "jquery.tools.min", "jScrollPane-1.2.3.min", "jquery.cookie"  %>
+  <%= csrf_meta_tag %>
+  <!--[if lt IE 7]>
+  <%= stylesheet_link_tag "style-ie" %>
+  <%= javascript_include_tag "ddpngfix.min" %>
+  <%= javascript_tag do -%>
+    $(document).ready(function(){
+      DD_belatedPNG.fix('.imgPNG, .mk_wis_common_questions_wrapper, \
+        .tooltip.bottom, img, .content-cloud-box, \
+        .header, .sub-content .center-wrapper .learn-block span.four-in-one, \
+        .home-plan-pricing, .newsletter-bg-wrapper, #flash_image_notice, \
+        .special-link-hlp a, .connecting-video-demo, #feature_benefits_wrapper');
+    });
+  <% end -%>
+  <![endif]-->
+    <%= yield :head %>
+  
+  <%= javascript_tag do -%>
+  $(document).ready(function(){
+      <%= yield :head_js_ready %>
+    });
+  <% end -%>
+
+</head>

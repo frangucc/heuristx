@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <%= render :partial => "shared/head" -%>
+  <body>
+    <div class="wrapper">
+      <div class="header2">
+        <div class="center-content">
+          <div id="logo">
+            <%= link_to image_tag("layout/marketing_portal/heuristx_logo.png", :alt => "Heuristx"), root_path %>
+          </div>
+          <div id="mainNavWrap">
+            <div id="mainNav">
+              <ul id="skyline">
+                <li id="panel1b"><%= link_to "", features_path %></li>
+                <li id="panel2b"><%= link_to "", portfolio_path %></li>
+                <li id="panel3b"><%= link_to "", portfolio_path %></li>
+                <li id="panel4b"><%= link_to "", portfolio_path %></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-media-header">
+            <a href="http://www.twitter.com/heuristx"><img src="images/layout/marketing_portal/marketing_twitter.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="static-col">
+          <%= yield :layout %>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18919812-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+    
+    <!-- script type="text/javascript">
+    var disqus_shortname = 'hueristx';
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'http://disqus.com/forums/hueristx/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script -->
+    
+  </body>
+</html>

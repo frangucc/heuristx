@@ -1,0 +1,72 @@
+<div class="main-tab-content">
+  <div class="tab-col-left">
+    <h2>In the Moment</h2>
+    <p>I ran a technical analysis blog for about a year. I used a simple blog engine to manage a service that delivered plays to futures and commodities traders. At its peak, 300 reoccurring visitors had been leveraging my free information.<br><br>It grew really intense for a moment. I was using the Google chat widget to communicate with traders while they were trading. At any given moment, I was pumping out advice and screenshots to 6 or 7 traders simultaneously while dozens of others were constantly commenting on the site.</p>
+  </div>
+  <div class="tab-col-mid">
+    <div class="tab-bullets">
+      <p class="title">Goals</p>
+      <ul>
+        <li><span>Chart the market and provide screenshots of particular plays</span></li>
+        <li><span>Create a place to learn how to chart a particular market</span></li>
+        <li><span>Build enough following to eventually monetize</span></li>
+      </ul>
+      <p class="title">Overview</p>
+      <p>Using the CQG, I would create 1, 5, 15, hourly and daily screenshots of trends and give guidance on how to play things like triangles, head and shoulder patterns, etc.</p>
+      <div class="home-slideshow slideshow-nine">
+        <div><%= image_tag "layout/marketing_portal/slide_trendlevel_1.jpg", :alt => "" %></div>
+      </div>
+      <div class="clear"></div>
+      <div id="home_slide_nav9" class="home_slide_nav"></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="tab-col-right"></div>
+  <div class="clear"></div>
+</div>
+
+<%= javascript_tag do -%>
+$(document).ready(function(){
+  
+  $().framerate({framerate: 30})
+  var rand = $('.slideshow-nine > div').length;
+  $('.slideshow-nine').cycle({
+    pager: '#home_slide_nav9',
+    cleartype: 1,
+    timeout:0,
+    startingSlide: Math.floor(Math.random() * rand),
+    fx: 'none'
+  });
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"});
+  var html = $(".hidden-media-widget").html();
+  $(".hidden-media-widget").remove();
+  $("#connect_and_exchange_wrapper").html(html);
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 1000);
+  
+  $(".mast-text").hide();
+  $(".mast-text").slideDown("slow");
+});
+
+<% end -%>
+
+<!-- mod/hack -->
+<div class="hidden-media-widget" style="dispay:none;">
+  <div class="center-content exchange-bg">
+    <div class="content-tab-navigation">
+      <div class="tab-left-link-white">
+        <%= link_to image_tag("layout/marketing_portal/arrow_back-white.png", :alt =>"") + " Previous Project","javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 8);return false;" %>
+      </div>
+      <div class="tab-right-link-white">
+        <%= link_to ("Next Project " + image_tag("layout/marketing_portal/arrow_next-white.png", :alt =>"")).html_safe ,"javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 10);return false;" %>
+      </div>
+    </div>
+    <div class="mast-bg-trendlevel" >
+      <div class="mast-text-trendlevel">
+        <h1>SERVICE</h1>
+        <p>TrendLevel was a service for futures and commodities traders.</p>
+        <div><%= image_tag "layout/marketing_portal/mast_buckfiddy_btn.jpg", :alt => "" %></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="main-tab-content">
+  <div class="tab-col-left">
+    <h2>In the Moment</h2>
+    <p>Active Radius is the parent company of Home Life Perks. I designed and developed this website in about 3 weeks. <br><br>The SaaS application associated took much longer and is actively being developed by myself and two other programmers.</p>
+  </div>
+  <div class="tab-col-mid">
+    <div class="tab-bullets">
+      <p class="title">Goals</p>
+      <ul>
+        <li><span>Develop a transactional marketing website for a new SaaS product</span></li>
+        <li><span>Communicate the mission and vision of the company better</span></li>
+        <li><span>Sell lots of subscriptions!</span></li>
+      </ul>
+      <p class="title">Overview</p>
+      <p>Active Radius specializes in the development of modern loyalty marketing and referral management applications for service professionals.</p>
+      <div class="home-slideshow slideshow-ten">
+        <div><%= image_tag "layout/marketing_portal/slide_activeradius_1.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_activeradius_2.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_activeradius_3.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_activeradius_4.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_activeradius_5.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_activeradius_7.jpg", :alt => "" %></div>
+      </div>
+      <div class="clear"></div>
+      <div id="home_slide_nav10" class="home_slide_nav"></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="tab-col-right">
+    <div class="title">Videos</div>
+    <div class="left" style="margin:0px 6px 0px 0px;" ><%= link_to image_tag("layout/marketing_portal/mast_vid_active_1.jpg", :alt => ""), "javascript:;", :onclick => "loadVideo1();" %></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<%= javascript_tag do -%>
+$(document).ready(function(){
+  $().framerate({framerate: 30})
+  var rand = $('.slideshow-ten > div').length;
+  $('.slideshow-ten').cycle({
+    pager: '#home_slide_nav10',
+    cleartype: 1,
+    timeout:0,
+    startingSlide: Math.floor(Math.random() * rand),
+    fx: 'none'
+  });
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"});
+  var html = $(".hidden-media-widget").html();
+  $(".hidden-media-widget").remove();
+  $("#connect_and_exchange_wrapper").html(html);
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 1000);
+  
+  $(".mast-text-activeradius").hide();
+  $(".mast-text-activeradius").slideDown("slow");
+});
+
+function loadVideo1() {
+   jQuery.facebox('<iframe src="http://player.vimeo.com/video/14401734?portrait=0" width="650" height="440" frameborder="0"></iframe><br><br>');
+   $(".fb-content").trigger("update");
+ }
+
+<% end -%>
+
+<!-- mod/hack -->
+<div class="hidden-media-widget" style="dispay:none;">
+  <div class="center-content exchange-bg">
+    <div class="content-tab-navigation">
+      <div class="tab-left-link-white">
+        <%= link_to image_tag("layout/marketing_portal/arrow_back-white.png", :alt =>"") + " Previous Project","javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 9);return false;" %>
+      </div>
+      <div class="tab-right-link-white">
+        <%= link_to ("Next Project " + image_tag("layout/marketing_portal/arrow_next-white.png", :alt =>"")).html_safe ,"javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 0);return false;" %>
+      </div>
+    </div>
+    <div class="mast-bg-activeradius" >
+      <div class="mast-text-activeradius">
+        <h1>NEW COMPANY</h1>
+        <p>Active Radius is a leading marketing and relationship management company.</p>
+        <div><a href="http://www.activeradius.com" target="_blank"><%= image_tag "layout/marketing_portal/mast_activeradius_btn.jpg", :alt => "" %></a></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

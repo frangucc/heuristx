@@ -1,0 +1,61 @@
+<div class="main-tab-content">
+  <div class="tab-col-left">
+    <h2>In the Moment</h2>
+    <p>TownClique is a concept I created for a clanning application. I started working on this idea about 6 years ago, before there were products like foursquare and loopt. I think this space is a lot of fun, yet very difficult to break into.</p>
+  </div>
+  <div class="tab-col-mid">
+    <div class="tab-bullets"name="goals">
+      <p class="title">Goals</p>
+      <ul>
+        <li><span>Facebook meets Google Maps</span></li>
+        <li><span>Halo clanning meets social networking</span></li>
+        <li><span>Cliques directly connect with advertisers</span></li>
+        <li><span>Virtual economies are created as people re-acquire land</span></li>
+        <li><span>Developed patented geo-location based ubicomp spime</span></li>
+      </ul>
+      <p class="title">Overview</p>
+      <p>The internet will be even more exciting when services such as Facebook and Google Maps start integrating assets with virtual world console games.</p>
+    </div>
+  </div>
+  <div class="tab-col-right"></div>
+  <div class="clear"></div>
+</div>
+
+<%= javascript_tag do -%>
+$(document).ready(function(){
+  
+  $().framerate({framerate: 30})
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"});
+  var html = $(".hidden-media-widget").html();
+  $(".hidden-media-widget").remove();
+  $("#connect_and_exchange_wrapper").html(html);
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 1000);
+  
+  $(".mast-text-black").hide();
+  $(".mast-text-black").slideDown("slow");
+});
+
+<% end -%>
+
+<!-- mod/hack -->
+<div class="hidden-media-widget" style="dispay:none;">
+  <div class="center-content exchange-bg">
+    <div class="content-tab-navigation">
+      <div class="tab-left-link">
+        <%= link_to image_tag("layout/marketing_portal/arrow_back.png", :alt =>"") + " Previous Project","javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 7);return false;" %>
+      </div>
+      <div class="tab-right-link">
+        <%= link_to ("Next Project " + image_tag("layout/marketing_portal/arrow_next.png", :alt =>"")).html_safe ,"javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 9);return false;" %>
+      </div>
+    </div>
+    <div class="mast-bg-townclique" >
+        <div class="mast-text-black">
+          <h1>CONCEPTUAL</h1>
+          <p>Local clanning geo-social application.</p>
+          <div><%= image_tag "layout/marketing_portal/mast_btn_hello.jpg", :alt => "" %></div>
+          
+        </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

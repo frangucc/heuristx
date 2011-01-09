@@ -1,0 +1,41 @@
+<% content_for :head_js_ready do -%>
+  $.preloadCssImages();
+  var _tabs = $("#hlp_content_tabs").tabs({
+    fx: { opacity: 'toggle', duration:'fast' },
+    tabTemplate: '<li><a href="#{href}" title="#{label}"></a></li>',
+    remote: true,
+    ajaxOptions: {
+      error: function(xhr, status, index, anchor) {
+        $(anchor.hash).html("<p>Error loading content.</p>");
+      }
+    }
+  });
+<% end -%>
+
+<div id="connect_and_exchange_wrapper">
+</div>
+
+<div id="hlp_tabbing_content">
+  <div class="center-content">
+
+    <div id="hlp_content_tabs">
+      <ul>
+        <li><%= link_to "&nbsp;", "ajax-tabs/chatyeo", :title => "chatyeo" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/baseprice", :title => "baseprice" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/dillyeo", :title => "dillyeo" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/crg", :title => "crg" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/buckfiddy", :title => "buckfiddy" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/homelifeperks", :title => "homelifeperks" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/rtwo", :title => "rtwo" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/spot", :title => "spot" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/townclique", :title => "townclique" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/trendlevel", :title => "trendlevel" %></li>
+        <li><%= link_to "&nbsp;", "ajax-tabs/activeradius", :title => "activeradius" %></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <!-- end of tabs -->    
+  </div>
+</div>
+
+<div id="footer"></div>

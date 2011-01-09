@@ -1,0 +1,86 @@
+<div class="main-tab-content">
+  <div class="tab-col-left">
+    <h2>In the Moment</h2>
+    <p>Home Life Perks is a massive project. It's a system for service professionals (such as Realtors) to create an affiliate network. It's like the Ning of affiliate networks!<br><br>I'm here now cranking out lots of design, content, code and motion video as CTO/Creative Director.<br><br>The low down on this company is that back in January this was all just an idea. It's ten months later and we've signed up hundreds of subscribers at $400.00 a year and cut deals with 10+ enterprise clients such as Coldwell Banker and Remax. <br><br>The company is good shape and its parent company Loyalty Builder has recently changed it's name to Active Radius.</p>
+  </div>
+  <div class="tab-col-mid">
+    <div class="tab-bullets">
+      <p class="title">Goals</p>
+      <ul>
+        <li><span>Think Ning does affiliate networking. Wink, wink!</span></li>
+        <li><span>Launch living and lifestyle faceted website with superb navigation</span></li>
+        <li><span>Develop rich administrative visualization tools to track content coverage and milestones</span></li>
+        <li><span>Bake in viral marketing strategies and utilities for both subscribers and consumers</span></li>
+        <li><span>Offer a turnkey loyalty marketing platform for service professionals</span></li>
+      </ul>
+      <p class="title">Overview</p>
+      <p>Home Life Perks is the custom branded consumer site service professionals offer their clients.</p>
+      <div class="home-slideshow slideshow-six">
+        <div><%= image_tag "layout/marketing_portal/slide_hlp_1.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_hlp_2.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_hlp_3.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_hlp_4.jpg", :alt => "" %></div>
+        <div><%= image_tag "layout/marketing_portal/slide_hlp_5.jpg", :alt => "" %></div>
+      </div>
+      <div class="clear"></div>
+      <div id="home_slide_nav6" class="home_slide_nav"></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="tab-col-right">
+    <div class="title">Experimental Videos</div>
+    <div class="left" style="margin:0px 6px 0px 0px;" ><%= link_to image_tag("layout/marketing_portal/mast_vid_hlp_2.jpg", :alt => ""), "javascript:;", :onclick => "loadVideo2();" %></div>
+    <div class="left" style="margin:0px 6px 0px 0px;" ><%= link_to image_tag("layout/marketing_portal/mast_vid_hlp_1.jpg", :alt => ""), "javascript:;", :onclick => "loadVideo1();" %></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<%= javascript_tag do -%>
+$(document).ready(function(){
+  var rand = $('.slideshow-six > div').length;
+  $('.slideshow-six').cycle({
+    pager: '#home_slide_nav6',
+    cleartype: 1,
+    timeout:0,
+    startingSlide: Math.floor(Math.random() * rand),
+    fx: 'none'
+  });
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"});
+  var html = $(".hidden-media-widget").html();
+  $(".hidden-media-widget").remove();
+  $("#connect_and_exchange_wrapper").html(html);
+  $("#connect_and_exchange_wrapper").css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 1000);
+  
+  $(".mast-text-hlp").hide();
+  $(".mast-text-hlp").slideDown("slow");
+});
+function loadVideo1() {
+  jQuery.facebox('<iframe src="http://player.vimeo.com/video/15550102?portrait=0" width="650" height="440" frameborder="0"></iframe><br><br>');
+  $(".fb-content").trigger("update");
+}
+function loadVideo2() {
+  jQuery.facebox('<iframe src="http://player.vimeo.com/video/15518453?portrait=0" width="650" height="440" frameborder="0"></iframe><br><br>');
+  $(".fb-content").trigger("update");
+}
+<% end -%>
+
+<!-- mod/hack -->
+<div class="hidden-media-widget" style="dispay:none;">
+  <div class="center-content exchange-bg">
+    <div class="content-tab-navigation">
+      <div class="tab-left-link">
+        <%= link_to image_tag("layout/marketing_portal/arrow_back.png", :alt =>"") + " Previous Project","javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 4);return false;" %>
+      </div>
+      <div class="tab-right-link">
+        <%= link_to ("Next Project " + image_tag("layout/marketing_portal/arrow_next.png", :alt =>"")).html_safe ,"javascript:void(0);", :onclick => "$('#hlp_content_tabs').tabs('select', 6);return false;" %>
+      </div>
+    </div>
+    <div class="mast-bg-hlp" >
+      <div class="mast-text-hlp">
+        <h1>NEW COMPANY</h1>
+        <p>Home Life Perks is a turnkey loyalty marketing system for service professionals' customers.</p>
+        <div><a href="http://loyaltybuilder.com" target="_blank"><%= image_tag "layout/marketing_portal/mast_hlp_btn.jpg", :alt => "" %></a></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

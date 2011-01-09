@@ -1,0 +1,149 @@
+
+<%= javascript_tag do -%>
+$(document).ready(function(){
+
+     $('.call').hover(function() {
+       $('.home-tout-bg').addClass('home-tout-bg-blur');
+     }, function() {
+       $('.home-tout-bg').removeClass('home-tout-bg-blur');
+     });
+
+  
+});
+function loadVideo1() {
+   jQuery.facebox('<iframe src="http://player.vimeo.com/video/5984751?portrait=0" width="650" height="440" frameborder="0"></iframe><br><br>');
+   $(".fb-content").trigger("update");
+ }
+
+<% end -%>
+<div id="connect_and_exchange_wrapper">
+<!-- mod/hack -->
+<div class="hidden-media-widget" style="dispay:none;">
+  <div class="center-content exchange-bg">
+
+    <div class="home-tout-bg">
+      <div class="home_mast_message">
+        <%= image_tag "layout/marketing_portal/home_mast_franknature.png", :alt => "" %>
+        <h1>The intrinsic value of an idea is often masked by our perceptions, process and objectives.</h1>
+        <p>I'm here to help tackle big initiatives and prioritize important activities with refreshing design and delivery minded thinking. </p>
+        <div class="call"><%= image_tag "layout/marketing_portal/btn_call_to_action.png", :alt => "" %></div>
+        </div>
+      </div>
+    <div class="main-tab-content">
+
+      <div id="benefits_usage">
+        
+        <div class="nav-block-wrapper">
+          <div class="photonav_block">
+            <div class="left" style="margin:0px 6px 10px 0px;" ><%= link_to image_tag("layout/marketing_portal/home_img_1.png", :alt => ""), "javascript:;", :onclick => "loadVideo1();" %></div>
+            <p class="title">Chatyeo Commercial</p>
+            <p>Low budget commercial shot on DSLR camera. Our process of ideation produced the concept. Employees were the cast.</p>
+          </div>
+          <div class="photonav_block">
+            <a href="/portfolio#chatyeo"><%= image_tag("layout/marketing_portal/home_img_2.jpg", :alt => "") %></a>
+            <p class="title">Chatyeo Simulation</p>
+            <p>A design accident turned start-up. This is what happens when chat meets search.<br><br></p>
+          </div>
+          <div class="photonav_block">
+            <a href="/portfolio#homelifeperks"><%= image_tag("layout/marketing_portal/home_img_3.jpg", :alt => "") %></a>
+            <p class="title">New Rails Project</p>
+            <p>Two innovative dudes are taking the affiliate marketing industry offline. Learn how I've helped them execute their vision.</p>
+          </div>
+          <div class="benefits_usage_block">
+            <p class="title">things I do</p>
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>Graphic Design</li>
+              <li>Motion</li>
+              <li>Illustration</li>
+              <li>Marketing</li>
+              <li>Project Management</li>
+              <li>User Experience Design</li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+          <div class="photo-nav-content">
+            <div class="photo-nav-div1">
+              <p class="title">what it be</p>
+              <p>
+                My names Heuristx (Francesco Pinto) and I'm a local entrepreneur focused on the consumer internet. I've been designing and writing code for more than a decade and am considered armed and dangerous (with knowledge of course). <br><br>I've helped a few really cool companies launch their innovation throughout my career, worked at agency, at industry and started up. Heuristx marks the beginning of my commitment to helping the community think way high and think way low. That's about all I can say, the rest I'll have to show'ya. 
+              </p>
+              <p class="title">props</p>
+              <p>
+                To the many mentors and students I have worked with in the past, I appreciate everything you've done for me and for this industry. I think we've created a great atmosphere for the consumer internet and given corporations lots of standards to live up to. Through my websites and publications, I'm always up for giving credit where credit is due. I'll be sure to drop your name wherever it fits.
+              </p>
+              
+            </div>
+            <div class="photo-nav-div2">
+              <p class="title">more things I do</p>
+              <ul>
+                <li>presentation layer development</li>
+                <li>.net in C#</li>
+                <li>javascript</li>
+                <li>extreme SEO</li>
+                <li>animation and sound</li>
+                <li>content strategy</li>
+              </ul>
+              <p class="title">things I find frolicsome</p>
+              <ul>
+                <li>erlang programming</li>
+                <li>hadoop and hbase</li>
+                <li>freebase</li>
+                <li>the nltk and python</li>
+                <li>neural networks</li>
+                <li>technical analysis</li>
+                <li>writing books</li>
+                <li>teaching</li>
+                <li>data mining</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+     
+    <div class="book-sale" style="margin:-30px 0 0 0;">
+      <div style="font-family:'Times New Roman';text-align:center;font-size:32px;color:#000;padding:40px 0 30px 0 ;border-top:1px solid #ddd;">Process Driven pushes all of our limits with refreshing design and delivery minded thinking.</div>
+      <div class="book" style="float:left;width:300px;">
+
+        <%= image_tag("layout/marketing_portal/book-cover.jpg ", :alt => "") %>
+        </div>
+        
+        <div class="book-copy" style="float:left;width:650px;">
+        <div class="book-title" style="font-family:arial;margin:0 0 20px 0;font-size:50px;font-weight:normal;letter-spacing:-2px;line-height:54px;"> 
+          The Process of Ideation, Creativity and Delivery
+          
+        </div>
+        
+        <div class="book-description" style="font-family:arial;font-size:28px;color:#00baff;line-height:36px;font-weight:lighter;">
+          <div class="book-fetch"><%= image_tag("layout/marketing_portal/book-fetch.png", :alt => "") %></div>
+            “This book raises our standards and consciousness to be in the moment as we deliver our innovation.” <i><span style="color:#b8cfd7;">Written by self-taught consumer internet product engineer, Francesco Pinto.</span></i>
+        </div> 
+        <div class="getbook" style="font-size:12px;margin:20px 0 0 0;"><a href="http://www.twitter.com/heuristx"><img src="http://twitter-badges.s3.amazonaws.com/t_small-b.png" style="float:left;" alt="Follow heuristx on Twitter"/></a><div style="margin:5px 0 0 10px;;float:left;"><a href="http://www.twitter.com/heuristx" style="color:#2c8bb1">Please follow me on Twitter for instructions on how to download my book.</a></div></div>
+        
+          </div>
+          <div class="clear"></div>
+          <br><br><br>
+      </div>
+     
+    </div>
+    
+    <div class="clear"></div>
+  </div>
+</div>
+</div>
+<div id="disqus_thread"></div>
+<!-- script type="text/javascript">
+  /**
+    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+    */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://hueristx.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=hueristx">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a -->

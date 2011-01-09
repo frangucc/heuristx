@@ -1,0 +1,24 @@
+<% content_for :page_title, "Features"%>
+  <div class="center-content">
+    <div id="hlp_pricing">
+      <p class="title">
+        Setup your account in less than 5 minutes!
+      </p>
+    </div>
+  </div>
+
+<div class="center-content">
+  <div id="pricing_content_wrapper">
+    <div class="premium-package-wrapper">
+      <%= link_to image_tag("spacer.gif", :alt => "", :class => "premium-package"), ::CHECKOUT_HOMEPAGE %>
+    </div>
+    <div class="network-package-wrapper">
+      <%= link_to image_tag("spacer.gif", :alt => "", :class => "network-package"), ::CHECKOUT_HOMEPAGE %>
+    </div>
+    <div class="perks-package-wrapper">
+      <%= link_to image_tag("spacer.gif", :alt => "", :class => "perks-package"), ::CHECKOUT_HOMEPAGE %>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>

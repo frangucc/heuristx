@@ -1,0 +1,1108 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Chatyeo - Web Chat</title>
+
+<script type="text/javascript" src="json2_002.js"></script>
+<script src="jquery_005.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+<script src="livevalidation.js" type="text/javascript" charset="utf-8"></script>
+<script src="nitrogen.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery_003.js" type="text/javascript"></script>
+<script src="jquery_002.js" type="text/javascript"></script>
+<script src="jScrollPane.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery_004.js"></script>
+<script type="text/javascript" src="web_events.js"></script>
+<script type="text/javascript" src="test.js"></script>
+<script type="text/javascript" src="testData.js"></script>
+<link rel="stylesheet" href="reset.css" type="text/css" media="screen" charset="utf-8">
+<!-- <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" charset="utf-8"> -->
+<link rel="stylesheet" href="page.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="elements.css" type="text/css" media="screen" charset="utf-8">
+<!--CSS resets-->
+<link href="reset-fonts-grids.css" rel="stylesheet" type="text/css">
+<!--universal style-->
+<link href="default.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.js" type="text/javascript"></script>
+<script src="jquery-ui-1.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery_003.js"></script>
+<script type="text/javascript" src="jquery_002.js"></script>
+<script type="text/javascript" src="jScrollPane.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" language="JavaScript" src="jquery_004.js"></script>
+<script type="text/javascript" language="JavaScript" src="json2.js"></script>
+
+
+<script type="text/javascript">
+// chatyeosearch javascript control 
+var timeout		= 500;
+var closetimer		= 0;
+var ddmenuitem		= 0;
+
+function jsddm_open()
+{	jsddm_canceltimer();
+	jsddm_close();
+	ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');}
+
+function jsddm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+function jsddm_timer()
+{	closetimer = window.setTimeout(jsddm_close, timeout);}
+
+function jsddm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#categories > li').bind('mouseover', jsddm_open);
+	$('#categories > li').bind('mouseout',  jsddm_timer);
+	$("#Conversation_Search_Input").change(function(){
+		var search_term=$("#Conversation_Search_Input").val();	
+		$("#content_searchbox").removeHighlight();
+		if(search_term.length>0)
+		{
+			$("#content_searchbox").highlight(search_term);
+		}
+		$("#content_searchbox").children("div").each(function(){
+			if($(this).html().search(search_term)<0)
+			{
+				$(this).css("visibility","hidden");
+			}
+			else
+			{
+				$(this).css("visibility","visible");
+			}	
+		});	
+	});
+
+});
+
+	document.onclick = jsddm_close;
+	// chatyeosearch dropdown selector
+	function ch(obj) {
+
+	    document.getElementById("active").innerHTML = obj.innerHTML;
+	    document.getElementById("active").className = obj.className;
+	}
+</script>
+<script type="text/javascript">
+// Modal popup js for the e-mail notify dropdown
+$(function() {
+		$("#mailthislnk").toggle(
+			function() {
+				$("#email-panel").animate({ display: "block", height: "218px" }, 1000);
+				$("#email-panel form").show();
+				$("#email-panel h3").show();
+			},
+			function() {
+				$("#email-panel").animate({ height: "0px", display: "none" }, 1000);
+				$("#email-panel form").hide();
+				$("#email-panel h3").hide();
+			}
+		);
+	});
+
+
+	$(function() {
+		$("#sortablefilters").sortable({
+				stop:function() {
+					var n=0;
+					$(".afilter").each(function() {
+						var v=$(this).html();
+						client.SetResultType(n,v);
+						n=n+1;
+					});
+					client.refreshCols();
+				}	
+		});			
+		$("#sortablefilters").disableSelection();
+	});
+	$(function() {
+		$("#slider-range").slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [0, 500],
+			slide: function(event, ui) {
+				$("#amount").val('$' + ui.values[0] + ' - $' + ui.values[1]);
+			}
+		});
+		$("#amount").val('$' + $("#slider-range").slider("values", 0) + ' - $' + $("#slider-range").slider("values", 1));
+	});
+	$(function(){
+		$('#pane3').jScrollPane({ showArrows: true, scrollbarWidth: 20 });
+	});
+
+//Modal popup pretty pretty show js :D
+$(function() {
+/*******
+###available effects are these Gersh :)###
+// blind, bounce, clip, drop, explode, fold
+// highlight, puff, pulsate, scale, shake
+// size, slide, transfer
+*****/
+		//run the currently selected effect
+		function runEffect(){
+			//set the selected effect here 
+			var selectedEffect = 'puff';
+
+			//most effect types need no options passed by default
+			var options = {};
+			//check if it's scale, transfer, or size - they need options explicitly set
+			if(selectedEffect == 'scale'){  options = {percent: 0}; }
+			else if(selectedEffect == 'size'){ options = { to: {width: 200,height: 60} }; }
+			
+			//run the effect
+			$("#modalpopup").toggle(selectedEffect,options,500);
+
+
+		};
+		
+		//run the effect from top script with selected a class
+		$("#div1 div").click(function() {
+			runEffect();
+			return false;
+		});
+		$("#div2 div").click(function() {
+			runEffect();
+			return false;
+		});
+		$("#div3 div").click(function() {
+			runEffect();
+			return false;
+		});
+		$("#close_link").click(function() {
+			runEffect();
+			return false;
+		});
+
+
+	});
+
+
+//Toggle timeline dropdown
+  $(document).ready(function(){
+    $("#slider-range a").click(function() {
+	$('#timelinepanel').animate({ backgroundColor: "#000000", height:"125px" }, 500);
+	$('#timeline_col1').show();
+	$('#timeline_col2').show();
+	$('#timeline_col3').show();	
+	$('#timeline_col4').show();
+	$('#timeline_col5').show();
+	$('#timeline_close_img img').show();
+
+});
+
+//This will close the timeline dropdown
+	$('#timeline_close_img img').click(function() {
+	$('#timelinepanel').animate({ backgroundColor: "#000000", height:"0px" }, 500);
+	$('#timeline_col1').hide();
+	$('#timeline_col2').hide();
+	$('#timeline_col3').hide();
+	$('#timeline_col4').hide();
+	$('#timeline_col5').hide();
+	$('#timeline_close_img img').hide();
+});
+	// This is the code to start the dropdown for the algorithms.
+	$('#tagcloud_algorithms').click(function(){
+		$('#timelinecommentpanel').show(); 
+	});
+	$('#tagcloud_close').click(function(){
+		$('#timelinecommentpanel').hide(); 
+	});
+  });
+
+//suggestor box css
+jQuery(function() {
+$('#chatyeo_search').jsonSuggest(testData.kingsofLeon, { onSelect: callback, maxResults: 10, fromBottom:true });
+    function callback(item) {
+        alert('You selected \'' + item.text + '\'\n\nHere is the full selected JSON object;\n' + JSON.stringify(item));
+    }
+});
+
+//search chatyeo js
+jQuery(function()	 {
+$('#searchfield').jsonSuggest(testData.searchChatyeo, { onSelect: callback });
+    function callback(item) {
+        alert('You selected \'' + item.text + '\'\n\nHere is the full selected JSON object;\n' + JSON.stringify(item));
+    }
+});
+//search chatyeo js
+jQuery(function()	 {
+$('#Conversation_Search_Input').jsonSuggest(testData.conversationSearch, { onSelect: callback, maxResults: 10, fromBottom:false });
+    function callback(item) {
+        alert('You selected \'' + item.text + '\'\n\nHere is the full selected JSON object;\n' + JSON.stringify(item));
+    }
+});
+
+// chatyeosearch input txt replace
+    function verifySelf1(obj) {
+        if (obj.value == null || obj.value == "") {
+            obj.value = "Search Conversations...";
+        } else {
+            //do nothing
+        }
+    }
+    function takebgOff(obj) {
+        if (obj.value == "Search Conversations...")
+        {
+            obj.value = "";
+        }
+    }
+
+    // Conversation Chat popup
+    function triggerConversations() {
+        if ( document.getElementById('content_searchbox_div').style.display != 'none') {
+            document.getElementById('preset_conversations').className = 'preset_fields_left';
+            document.getElementById('content_searchbox_div').style.display = 'none';
+        }
+        else {
+            document.getElementById('preset_conversations').className = 'preset_fields_left preset_link_active';
+            document.getElementById('content_searchbox_div').style.display = '';
+        }
+    }
+// get past chats code for breadcrumbs
+function getPastChats()
+{
+	if(document.getElementById('pastChatTimeline').className != 'pastChatTimelineHover'){
+		document.getElementById('pastChatTimeline').className = 'pastChatTimelineHover';
+		document.getElementById('pastChatTimeline').innerHTML = document.getElementById('pastChatMsgHidden').value;
+		//This will load the past Topic discussed instead of computers
+		document.getElementById('pastChatMsgHidden').value = 'Computers';
+		document.getElementById('loadPastChatWrapper').style.display = '';
+		
+	}
+	else {
+		document.getElementById('pastChatTimeline').className = 'pastChatTimeline';
+		document.getElementById('pastChatTimeline').innerHTML = document.getElementById('pastChatMsgHidden').value;
+		document.getElementById('pastChatMsgHidden').value = 'Previous Topics';
+		document.getElementById('loadPastChatWrapper').style.display = 'none';
+		
+	}
+}
+// Modal popup JS
+	$(function() {
+		$("#mainwindow").tabs({ fx: { opacity: 'toggle' } });
+	});
+</script>
+<script type="text/javascript">
+	// This is the js to tell which primarynav button is currently selected.
+	function changeDefault(obj){
+		if (obj.id == 'whatsChatyeoBtn') {
+		document.getElementById('liveChatyeoBtn').className = 'pnav-live';
+		document.getElementById('pauseChatyeoBtn').className = 'pnav-pause';
+		document.getElementById('searchChatyeoBtn').className = 'pnav-search';
+		obj.className = 'pnav-what-active';
+		}
+		else if (obj.id == 'liveChatyeoBtn') {
+		document.getElementById('whatsChatyeoBtn').className = 'pnav-what';
+		document.getElementById('pauseChatyeoBtn').className = 'pnav-pause';
+		document.getElementById('searchChatyeoBtn').className = 'pnav-search';
+		obj.className = 'pnav-live-active';		
+		}
+		else if (obj.id == 'pauseChatyeoBtn') {
+		document.getElementById('whatsChatyeoBtn').className = 'pnav-what';
+		document.getElementById('liveChatyeoBtn').className = 'pnav-live';
+		document.getElementById('searchChatyeoBtn').className = 'pnav-search';
+		obj.className = 'pnav-pause-active';		
+		}
+		else {
+		document.getElementById('whatsChatyeoBtn').className = 'pnav-what';
+		document.getElementById('liveChatyeoBtn').className = 'pnav-live';
+		document.getElementById('pauseChatyeoBtn').className = 'pnav-pause';
+		document.getElementById('searchChatyeoBtn').className = 'pnav-search-active';
+		}
+	};
+	
+</script>
+</head><body><div style="left: -100em; position: absolute; width: 100em;"></div><div style="left: -100em; position: absolute; width: 100em;"></div>
+<div id="headerwrapper">
+<div id="header">
+<div id="logo"><a href="javascript:;"><img src="images/logo.png" alt="Chatyeo Logo"><span class="hide">Chatyeo</span></a></div><!--end logo-->
+<div id="topnavbg">
+	<div id="topnav">
+    	<ul>
+        	<li><a href="javascript:;">My Chatyeo</a></li>
+        	<li><a href="javascript:;">Register</a></li>
+        	<li><a href="javascript:;">Help</a></li>
+        	<li><a href="javascript:;">Settings</a></li>            
+        </ul>
+    </div><!--end top nav-->
+</div>
+<div id="topnavbgleft">
+	<div id="topnavleft">
+    	<ul>
+        	<li><a href="javascript:;">Home</a></li>
+        	<li><a href="javascript:;">Profile</a></li>
+        	<li><a href="javascript:;">Terminal</a></li>
+        	           
+        </ul>
+    </div><!--end top nav-->
+</div>
+<!--end topnavBG-->
+</div><!--end top nav wrapper-->
+</div><!--end header-->
+<div id="contentwrapper">
+	<div id="primarynav">
+    	<div id="leftcorner"></div>
+        	<ul>
+            	<li><a class="pnav-what" href="javascript:;" alt="What's Chatyeo" onClick="changeDefault(this);" title="What's Chatyeo" id="whatsChatyeoBtn">What's Chatyeo</a></li>
+                <li><a class="pnav-live-active" href="javascript:;" alt="Live Chatyeo" onClick="changeDefault(this);" title="Live Chatyeo" id="liveChatyeoBtn">Live Chatyeo</a></li>
+                <li><a class="pnav-pause" href="javascript:;" alt="Pause Chatyeo" onClick="changeDefault(this);" title="Pause Chatyeo" id="pauseChatyeoBtn">Pause Chatyeo</a></li>
+                <li><a class="pnav-search" href="javascript:;" onClick="changeDefault(this);" alt="Search Chatyeo" title="Search Chatyeo" id="searchChatyeoBtn">Search Chatyeo</a></li>
+            </ul>
+            <div id="catdropdown">
+					<ul id="categories">
+   						 <li id="websearchbg"><a class="websearch" id="active" href="javascript:;">Web Search</a>
+        						<ul>
+        						    <li><a class="websearch" id="WebSearch" onClick="ch(this)" href="javascript:;">Web Search</a></li>
+           							<li><a class="news" id="News" onClick="ch(this)" href="javascript:;">News</a></li>
+            						<li><a class="pol" id="Politics" onClick="ch(this)" href="javascript:;">Politics</a></li>
+            						<li><a class="mus" id="Music" onClick="ch(this)" href="javascript:;">Music</a></li>
+            						<li><a class="shop" id="Shopping" onClick="ch(this)" href="javascript:;">Shopping</a></li>
+            						<li><a class="fin" id="Finance" onClick="ch(this)" href="javascript:;">Finance</a></li>
+        						</ul>
+    					</li>
+    					<li><input autocomplete="off" value="Search Conversations..." id="chatyeo_search" class="chatyeo_search_input" onFocus="javascript:takebgOff(this);" onBlur="javascript:verifySelf1(this);" type="text"><div style="top: 114px; left: 862px; width: 295px; display: none;" class="jsonSuggestResults"></div></li>
+					</ul>
+            </div>
+        <div id="rightcorner"></div>
+    </div><!--end primarynav-->
+<div id="main_content_wrapper">
+<div id="searchchatyeo" style="display: none;"><!-- start of search chatyeo -->
+  <div id="whatisyourquestion">
+    <p>Search Real-Time Conversations, Topics and Media</p>
+    <button type="submit">search</button>
+    <textarea autocomplete="off" style="" id="searchfield"></textarea><div style="top: 5px; left: 0px; width: 0px; display: none;" class="jsonSuggestResults"></div>
+  </div>
+</div><!-- end search chatyeo -->
+<div id="live_chatyeo_content"><!-- start of live chatyeo -->
+    	<div id="actionpane">
+        	<div id="popads">
+        		<p>You're discussing: <a href="javascript:;">machine learning,</a> <a href="javascript:;">algorithms,</a> <a href="javascript:;">supervised learning,</a> <a href="javascript:;">computational lingustics</a>...</p>
+        	</div><!--end popads-->
+           	<div id="timeline">
+            	<div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider-range"><div style="left: 0%; width: 100%;" class="ui-slider-range ui-widget-header"></div><a style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a><a style="left: 100%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+            </div><!--end timeline-->
+            	<div id="filter">
+                	<ul style="-moz-user-select: none;" unselectable="on" class="ui-sortable" id="sortablefilters">
+                    	<p>Filter By:</p>
+                        	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a href="javascript:;" class="afilter" alt="Filter by Text Findings" title="Filter by Text Findings">TextFindings</a></li>
+                        	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by Images" title="Filter by Images">Images</a></li>
+                       	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by Twitter" title="Filter by Twitter">Twitter</a></li>
+                         	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by WayFair" title="Filter by WayFair">WayFair</a></li>
+                        	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by Sites" title="Filter by Sites">Sites</a></li>
+                        	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by Doc" title="Filter by Docs">Docs</a></li>
+                        	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by Video" title="Filter by Video">Video</a></li>
+                        	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><a class="afilter" href="javascript:;" alt="Filter by Yahoo Answers" title="Filter by Yahoo Answers">YahooAnswers</a></li>
+					</ul>     
+                </div>
+    	</div><!--end actionpane-->
+       <div id="displayresults">
+    <div id="col1"><div style="background-color: rgb(254, 254, 254);" class="text-resultreturn" onClick="client.Popup('TextFinding',0);">
+<h3>Lollapalooza taps Kings of Leon, Jane's Addiction | Entertainment ...</h3>
+<p>NEW YORK (Billboard) - Kings of Leon will be among the headliners of
+this year's Lollapalooza and Austin City Limits festivals, Billboard
+sources have ...</p>
+</div>
+<div class="text-resultreturn" onClick="client.Popup('TextFinding',1);">
+<h3>Kings of Leon-Wikipedia the free encyclopedia</h3>
+<p>Kings of Leon is an alternative rock band from Nashville, Tennessee
+formed in 2000 by the brothers Caleb Followill (lead vocals and rhythm
+guitar), ...</p>
+</div>
+<div style="background-color: rgb(254, 254, 254);" class="text-resultreturn" onClick="client.Popup('TextFinding',2);">
+<h3>Kings of Leon Official Store | Featured Items</h3>
+<p>Official Kings of Leon merchandise. The largest and latest selection of t-shirts, gear and merchandise from fanfire.com.</p>
+</div>
+<div style="background-color: rgb(254, 254, 254);" class="text-resultreturn" onClick="client.Popup('TextFinding',3);">
+<h3>Kings of Leon - MySpace</h3>
+<p>Kings of Leon's official MySpace page with photos, music downloads,
+tour dates, blog entries, and a chance for fans to post messages to the
+band.</p>
+</div>
+<div style="background-color: rgb(254, 254, 254);" class="text-resultreturn" onClick="client.Popup('TextFinding',4);">
+<h3>Kings Of Leon : Rolling Stone</h3>
+<p>Rolling Stone gives you total Kings Of Leon coverage including free
+music, videos, photos, music news and exclusive Rolling Stone articles..</p>
+</div>
+<div style="background-color: rgb(254, 254, 254);" class="text-resultreturn" onClick="client.Popup('TextFinding',5);">
+<h3>Kings of Leon Concert Tickets | TicketsNow.com</h3>
+<p>100% Money back guarantee on Kings of Leon Concert Tickets at TicketsNow.com - Official Site.</p>
+</div>
+</div><!--end col1-->
+            <div id="col2"><div class="image-resultreturn" onClick="client.Popup('Image',0);">
+<img class="profileimg" src="img_return-025.asc"><p>Mojo Cover</p></div><div class="image-resultreturn" onClick="client.Popup('Image',1);">
+<img class="profileimg" src="img_return-010.asc"><p>Only by the Night</p></div><div class="image-resultreturn" onClick="client.Popup('Image',2);">
+<img class="profileimg" src="img_return-011.asc"><p>Kings of Leon in Concert</p></div><div class="image-resultreturn" onClick="client.Popup('Image',3);">
+<img class="profileimg" src="img_return-012.asc"><p>Kings of Leon</p></div></div><!--end col2-->
+                            
+       		<div id="col3"><div class="twitter-resultreturn" onClick="client.Popup('Twitter',0);"><img class="profileimg" src="courtney_normal.asc"><p>cortneyhitt:"use somebody" kings of leon...</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',1);"><img class="profileimg" src="JHAN_normal.asc"><p>johnantanderson:broke down and got the kings of leon. genius</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',2);"><img class="profileimg" src="scotty_normal.asc"><p>ressm: time to blast kings of leon...and figure out what to do w all this free time!!!</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',3);"><img class="profileimg" src="koll_over_normal.asc"><p>Kollover:
+is so haps she just got KINGS OF LEON BOXEDit comes with a poster i
+think so there is another one to the collection in my room</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',4);"><img class="profileimg" src="green_thom_hall.asc"><p>Thomhall: Remember the first Kings of Leon album Youth and Young manhood? it's still fucking good. #musicmonday #kol</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',5);"><img class="profileimg" src="kol_fan_normal.asc"><p>rebyramalho: She took my heart. I think she took my soul. Kings of Leon - Closer</p></div></div><!--end col3-->
+       </div><!--end display results-->
+</div> <!-- end of live chatyeo -->
+
+</div> <!-- end of main content wrapper -->
+<div id="main_chat_wrapper">
+	<div id="breadcrumbs">
+		<input id="pastChatMsgHidden" name="pastChatMsgHidden" value="Previous Topics" type="hidden">
+        	<div id="pastChatTimeline" class="pastChatTimeline" onClick="getPastChats();">
+			Music
+		</div>
+			<div id="loadPastChatWrapper" class="loadPastChatWrapper" style="display: none;">
+				<div id="past_topics_feed">
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="music-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Music - Garage rock revival</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="music-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Music - Lollapalooza</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="music-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Music - Alternative Rock</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="shopping-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Shopping - Compact Discs</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="shopping-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Shopping - Music players</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="shopping-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Shopping - Election Memorabilia</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="web-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Web Search - President Mask</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="politics-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Politics - Sarah Palin</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="web-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Web - Rolling Stone</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="music-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Music - Kings of Leon</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="web-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">Web - Mojo Magazine</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="past_topics_wrapper">
+						<ul>
+						<li class="past_topics_img"><img src="news-mini-icon.asc" alt=""></li>
+						<li class="past_topics_cat">News - Michael Jackson</li>
+						<li class="past_topics_remove"><img src="close.asc" alt="remove" title="remove"></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		<div id="currentChatTimeline" class="currentChatTimeline">
+<div id="currentChatTimelineCnt" class="currentChatTimelineCnt">+320</div>
+			Kings Of Leon
+		</div>
+		<div id="futureChatTimeline" class="futureChatTimeline">
+			Alternative
+		</div>
+	</div><!--close breadcrumbs-->
+	<div class="holder">
+			<div tabindex="0" style="height: 435px; width: 435px;" class="jScrollPaneContainer"><div style="padding: 0px 5px 0px 0px; overflow: visible; height: auto; width: 410px; top: -819px; position: absolute;" id="pane3" class="scroll-pane">
+                <div id="chatbox_feed" class="chatbox_feed">
+                <!-- start of chat comment wrapper -->
+                <div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+<div class="chatbox_message"><span class="message_username">Katie: </span>Who are Kings of Leon?
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarnathan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Nathan: </span>An awesome band!
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+<div class="chatbox_message"><span class="message_username">Katie: </span>Never heard of them
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarnathan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Nathan: </span>They're from Nashville. They're great
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmorgan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Morgan: </span>Yeah they've been huge in Australia and the UK for a while, they&#8217;re just getting big here.
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmichaela.asc"></div>
+<div class="chatbox_message"><span class="message_username">Michaela: </span>Check out they're song Use Somebody
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmauro.asc"></div>
+<div class="chatbox_message"><span class="message_username">Mauro: </span>Use Somebody rocks
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarnathan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Nathan: </span>Did you guys know they're all related?
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmorgan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Morgan: </span>Yeah they're all brothers. I always think it's really cool when musical acts are family too.
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+<div class="chatbox_message"><span class="message_username">Katie: </span>I'm listening to Use Somebody. Love it!
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmauro.asc"></div>
+<div class="chatbox_message"><span class="message_username">Mauro: </span>Katie you should also check out they're song Notion
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarnathan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Nathan: </span>Did you guys know they're all related?
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmorgan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Morgan: </span>My bad...Wikipedia says just Caleb, Jared, and Nathan are brothers and Matthew is their cousin.
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmauro.asc"></div>
+<div class="chatbox_message"><span class="message_username">Mauro: </span>Cool google news says they started their own record label
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmichaela.asc"></div>
+<div class="chatbox_message"><span class="message_username">Michaela: </span>Wiki also says their name came from their father and grandfather who were both named Leon.
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmauro.asc"></div>
+<div class="chatbox_message"><span class="message_username">Mauro: </span>Hmmmmmmmm
+thats cool. See if I did something like that my band's name would be
+Kings of Diego. But I don't think that sounds as good.
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarnathan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Nathan: </span>Mine would be Kings of Victor
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+<div class="chatbox_message"><span class="message_username">Katie: </span>Hahaha.
+It is a really creative way to name a band though, somethign I would
+have never thought of...especially for a family act to use a first name
+instead of a last name, which has been done before...Van Halen,
+Daughtry, Hanson, ect...
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmorgan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Morgan: </span>Katie did you just find out about the band?
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+<div class="chatbox_message"><span class="message_username">Katie: </span>Yeah I just saw them on the cover of Mojo and was curious
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmorgan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Morgan: </span>If
+you want to hear another good song by them check out The Bucket. It's
+from an earlier album. Those albums are admittedly not as mainstream or
+pop-y as their new one. It seems like KOL were def going the
+alternative route previously. They change up their sound on every album
+they put out...'Youth &amp; Youngmanhood' is extremely different than
+'Only by the Night'..it's cool that they are so versatile
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarmichaela.asc"></div>
+<div class="chatbox_message"><span class="message_username">Michaela: </span>Ohhhh
+good call Morgan The Bucket is a fantastic song. Be careful though
+Katie it might blow your mind sooo you might want to be sitting when
+you listen to it.
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarnathan.asc"></div>
+<div class="chatbox_message"><span class="message_username">Nathan: </span>U guys know they're going to be at "Lollapalooza" this year?
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div><div class="chatbox_message_wrapper">
+<div class="chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+<div class="chatbox_message"><span class="message_username">Katie: </span>KOL
+are amazing live! The first time I saw them was last November in
+Philadelphia at the Electric Factory...classic venue. It was amazing!
+They opened with 'closer' and played FOUR encores...can't wait to see
+what they do for Lollapalooza!
+<div class="clear"></div>
+<div class="chatbox_link">
+</div></div></div></div>
+			</div><div style="width: 20px; height: 395px; top: 20px;" class="jScrollPaneTrack"><div style="width: 20px; height: 137.022px; top: 258px;" class="jScrollPaneDrag"><div style="width: 20px;" class="jScrollPaneDragTop"></div><div style="width: 20px;" class="jScrollPaneDragBottom"></div></div></div><a style="width: 20px;" tabindex="-1" class="jScrollArrowUp" href="javascript:;">Scroll up</a><a style="width: 20px;" tabindex="-1" class="jScrollArrowDown disabled" href="javascript:;">Scroll down</a></div>
+		</div><!-- end of chatbox -->
+		    <textarea id="message_textarea_input" class="message_textarea_input" title="have something to say?" cols="50" rows="3"></textarea>
+	<button id="add_chat_btn" style="display: none;" class="add_chat_btn">Add Chat</button>
+	</div><!--end contentwrapper-->
+</div><!--end main chat wrapper -->
+<div id="footer">
+    <div id="content_searchbox_div" style="display: none;">
+    <div id="content_searchbox_input">
+    <div id="content_searchbox_input_text">Search Your Conversations</div>
+    <input autocomplete="off" style="" id="Conversation_Search_Input" class="conversation_search_input" value="" type="text"><div style="bottom: 60px; left: 6px; width: 0px; display: none;" class="jsonSuggestResults"></div>
+    </div>
+    </div>
+    <div id="preset_ui">
+        <div id="preset" class="clearfix">
+        	<div id="preset_left_bar">
+            	<div id="preset_conversations" class="preset_fields_left">
+                	<div class="preset_link" onClick="triggerConversations();"><img src="preset_img.asc" alt=""> Conversations</div>
+                 </div>
+                <!--<div class="preset_fields_left">
+                	<div class="preset_link">Past Chats</div>
+                </div>-->
+            </div>
+            <div id="preset_right_bar">
+            	<div class="preset_fields_right">&nbsp;</div>
+            	<div class="preset_fields_right">&nbsp;</div>
+                <div class="preset_fields_right">
+                	<div class="preset_link"><img src="onlineFriends.asc" alt="">Online Friends (0)</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal popup and timeline dropdown html codes -->
+<div id="timelinepanel">
+  <div id="loading"></div>
+<div id="timeline_close_img"><img src="close_btn_img.asc" alt=""></div>
+  <!--close loading-->
+  <div class="col" id="timeline_col1">
+    <div class="small"><a href="javascript:;">Snoop Dogg</a></div>
+    <div class="medium"><a href="javascript:;">Tickets</a></div>
+  </div>
+  <div class="col" id="timeline_col2">
+    <div class="big"><a id="tagcloud_algorithms" href="javascript:;">Afer Shows</a>
+  <div id="timelinecommentpanel">
+    <div id="commentheader">
+      <p>chat history</p>
+      <a id="tagcloud_close" href="javascript:;">close</a></div>
+    <div id="timelinecomments">
+      <div class="comment"> <img class="avatar" src="avatar-photo12.asc">
+        <p><span class="username">Samantha: </span>Hey! Anyone know the difference between the actual event and the aftershows?</p>
+        <p class="postdate">8:14pm  Dec. 09</p>
+      </div>
+      <div class="comment"> <img class="avatar" src="avatar-timwatkins.asc">
+        <p><span class="username">Nathan: </span>The aftershows feature other bands and artists at smaller venues in Chicago</p>
+        <p class="postdate">3:14pm  Jan. 10</p>
+      </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo14.asc">
+        <p><span class="username">Shauna: </span>They aren't in Grant Park...usually downtown like at the house of blues or metro</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-timwatkins.asc">
+        <p><span class="username">Nathan: </span>It's a great way to see artists before or after their lollapalooza set if you miss them</p>
+        <p class="postdate">3:32pm  Jan. 10</p>        
+      </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo12.asc">
+        <p><span class="username">Samantha: </span>What are the prices like?</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo14.asc">
+        <p><span class="username">Shauna: </span>:It really depends...some shows are free and some shows can go up to $30</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-timwatkins.asc">
+        <p><span class="username">Nathan: </span>It's definitely a more intimate setting though and an awesome party atmosphere</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo08.asc">
+        <p><span class="username">Claudia: </span>They don't start until after Lollapalooza is done for the day so it's awesome if you want to continue listening to music</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo14.asc">
+        <p><span class="username">Shauna: </span>You can be introduced to bands that you'd probably never have the opportunity to</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo08.asc">
+        <p><span class="username">Claudia: </span>I'd definitely check it out</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+      <div class="comment"> <img class="avatar" src="avatar-photo12.asc">
+        <p><span class="username">Samantha: </span>Awesome! Thanks so much!</p>
+        <p class="postdate">3:32pm  Jan. 10</p>
+        </div>
+    </div>
+  </div>
+</div>
+    <div class="small"><a href="javascript:;">Grant Park</a></div>
+    <div class="small2"><a href="javascript:;">The Killers</a></div>
+  </div>
+  <div class="col" id="timeline_col3">
+    <div class="small"><a href="javascript:;">flights</a></div>
+    <div class="medium"><a href="javascript:;">Ben Folds</a></div>
+  </div>
+  <div class="col" id="timeline_col4">
+    <div class="medium"><a href="javascript:;">Three-Day Pass</a></div>
+    <div class="big"><a href="javascript:;">CTA-Public Transit</a></div>
+  </div>
+  <div class="col" id="timeline_col5">
+    <div class="small"><a href="javascript:;">August</a></div>
+    <div class="small2"><a href="javascript:;">Vendors</a></div>
+    <div class="medium"><a href="javascript:;">Booze</a></div>
+    <div class="medium"><a href="javascript:;">Hotels</a></div>
+  </div>
+</div>
+<!-- end of timeline -->
+<div class="clear"></div>
+<div id="modalpopup" style="display: none;"><!-- Start of modal popup -->
+<div id="overlayTrigger" class="overlay"></div>
+	<div id="modalcol1">
+    	<div id="top">
+    		<h3>Kings of Leon News</h3>
+            <p>In
+related news, Kings of Leon are set to rock the first day of 2009
+Lollapalooza Music Festival on August 7 at Chicago's Grant Park. The
+four-piece band will be joined...</p>
+
+            <ul>
+            	<li id="tackthis"><a href="javascript:;" id="tackthislnk" title="Tack This"><span class="hide">Tack This</span></a></li>
+            	<li id="mailthis"><a href="javascript:;" id="mailthislnk" title="Mail This" class="btn-slide"><span class="hide">Mail This</span></a></li>
+            	<li id="heartthis"><a href="javascript:;" id="heartthislnk" title="Heart This"><span class="hide">Heart This</span></a></li>
+            	<li id="questionthis"><a href="javascript:;" id="questionthislnk" title="Question This"><span class="hide">Question This</span></a></li>
+            </ul>
+   		 </div> <!--close TOP-->
+         <div id="email-panel">
+          	<h3>Email This Conversation</h3>
+            <form>
+              <input size="" title="To" type="text">
+              <textarea name="say-it" rows="4" cols="20" wrap="physical" title="Say it...Don't be shy"></textarea>
+              <input class="submit" value="send email" type="submit">
+            </form>
+         </div><!--e-mail panel-->   	
+    </div>
+    <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="mainwindow">
+<div id="close_btn_wrapper"><a href="javascript:;" id="close_link">close</a></div>
+	<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" id="tab-nav">
+            	<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#content-preview">Content Preview</a></li>
+                <li class="ui-state-default ui-corner-top"><a href="#wayfair">WayFair Findings</a></li>
+                <li class="ui-state-default ui-corner-top"><a href="#link-mesh">Link Mesh</a></li>
+	</ul>
+		<div class="clear"></div>
+	<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="content-preview">
+		<h3 class="h3_title">History of Lollapalooza</h3> 
+                <p class="content_p">Lollapalooza
+is an American music festival featuring alternative rock, hip hop, and
+punk rock bands, dance and comedy performances, and craft booths. It
+has also provided a platform for non-profit and political groups.
+Lollapalooza has featured a diverse range of bands and has helped
+expose and popularize alternative groups such as Nine Inch Nails, The
+Smashing Pumpkins, Red Hot Chili Peppers, and Hole.<br><br>Conceived
+and created in 1991 by Jane's Addiction singer Perry Farrell as a
+farewell tour for his band, Lollapalooza ran annually until 1997, and
+was revived in 2003. From its inception through 1997, and its revival
+in 2003, the festival toured North America. In 2004, the festival
+organizers decided to expand the dates to two days per city, however
+poor ticket...</p>
+
+                <a class="readmore_lnk" href="javascript:;">continue</a>
+                <div class="articlechanger"></div>
+                <a class="browsecontent" href="javascript:;">Browse This Content Using WayFair</a>
+	</div>
+	<div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="wayfair">
+		<h3 class="h3_title">Contest: Island Records 50th Anniversary Lollapalooza Ticket Giveaway</h3> 
+                <img class="content_img" src="modalwindow-giveaway.asc" alt="">
+                <p class="content_p">To
+celebrate their 50th Anniversary, Island Records is teaming up with
+Icon vs. Icon to give you a chance to win a pair of tickets to the
+annual Lollapalooza festival in Grant Park, Chicago and a $100 gas card
+to help get you there!<br><br>If a weekend full of live music with mega-stars The Killers, Beasties Boys and Tool...</p>
+                <a class="readmore_lnk" href="javascript:;">continue</a>
+                <div class="articlechanger"></div>
+                <a class="browsecontent" href="javascript:;">Browse This Content Using WayFair</a>
+	</div>
+	<div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="link-mesh">
+		<a href="javascript:;" class="link1">Lollapalooza</a>
+		<a href="javascript:;" class="link2">The Killers</a>
+		<a href="javascript:;" class="link2">Jane's Addiction</a>
+		<a href="javascript:;" class="link3">Tickets</a>
+		<a href="javascript:;" class="link2">Snoop Dogg</a>
+		<a href="javascript:;" class="link1">Chicago</a>
+		<a href="javascript:;" class="link3">Island Records</a>
+		<a href="javascript:;" class="link2">Beastie Boys</a>
+		<a href="javascript:;" class="link3">Grant Park</a>
+		<a href="javascript:;" class="link2">Tool</a>
+		<a href="javascript:;" class="link1">Kings of Leon</a>
+		<a href="javascript:;" class="link3">Perry Farrell</a>
+		<a href="javascript:;" class="link2">Summer festivals</a>
+		<a href="javascript:;" class="link3">live music</a>
+	</div>
+<div class="modal_chat_wrap">
+<div class="holder2">
+	<div id="pane2" class="scroll-pane">
+	<div id="modal_chatbox_feed" class="modal_chatbox_feed">
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Katie: </span>This concert contest is awesome!
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo15.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Brad: </span>Yea, in July all the local radio stations offer up free tickets and they give a bunch away
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo14.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Pat: </span>Did you see they're giving away custom zippos too??
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo02.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Sam: </span>And Gas cards!
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Katie: </span>Yea all you have to do is enter...Lollapalooza is going to be so awesome this year I can't wait!
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo15.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Brad: </span>The deadline is on the tenth so make sure to enter fast
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo14.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Pat: </span>You can check out the whole line up at
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"><a href="http://www.lollapalooza.com/">www.lollapalooza.com</a></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo02.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Sam: </span>I'm so excited that it's permanently in Chicago now, I've always missed it
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo15.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Brad: </span>It is the best line-up I've seen in the Chi so far
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo14.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Pat: </span>Yea, Sunday alone is The Killers, Snoop Dogg and Jane's Addiction
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatarkatie.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Katie: </span>Perry Farrell from Janes Addiction is the one that started Lollapalooza in '93 so it will be cool to see ihm
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo15.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Brad: </span>Yea, definitely way better than Lillith Fair
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		<div class="modal_chatbox_message_wrapper">
+                        <div class="modal_chatbox_image"><img alt="" src="avatar-photo14.asc"></div>
+                        <div class="modal_chatbox_message"><span class="message_username">Pat: </span>I agree, but I do love me some Indigo girls. 
+				<div class="clear"></div>
+				<div class="modal_chatbox_link"></div>
+			</div>
+		</div>
+		<div class="clear"></div><!-- end of message wrapper -->
+		</div>
+	</div>
+	</div>	
+<textarea id="modal_chatbox_message_input" class="modal_chatbox_message_input" cols="50" rows="3"> </textarea>
+</div>
+</div>
+</div> <!-- end of modal popup html -->
+<form>
+<input id="page__me" name="page__me" type="hidden"><input id="page__message_input" name="page__message_input" type="hidden"><input id="page__new_topic" name="page__new_topic" type="hidden">
+</form>
+<script type="text/javascript">
+Nitrogen.$current_id='page';Nitrogen.$current_path='page';Nitrogen.$set_dom_state("UDKknYNoAm4FAGpUycMObAAAAAJoAmQACnZhbGlkYXRvcnNqaAJkABN0ZW1wbGF0ZV93YXNfY2FsbGVkZAAEdHJ1ZWo");
+
+</script>
+<script type="text/javascript">
+function changeTopic(){Nitrogen.$queue_event('page__me', 'pZ2fj4NoAm4FAGpUycMOaAZrAARwYWdlZAALY2hhbmdlVG9waWNkAAVjbGlja2QACHBhZ2VfX21lZAACbWVkAAl3ZWJfY2hhdDI');;}function searchConversation(){Nitrogen.$queue_event('page__me', 'BvXw3YNoAm4FAGpUycMOaAZrAARwYWdlZAASc2VhcmNoQ29udmVyc2F0aW9uZAAFY2xpY2tkAAhwYWdlX19tZWQAAm1lZAAJd2ViX2NoYXQy');;}function addChat(){Nitrogen.$queue_event('page__me', 'SBaVjYNoAm4FAGpUycMOaAZrAARwYWdlZAAHYWRkQ2hhdGQABWNsaWNrZAAIcGFnZV9fbWVkAAJtZWQACXdlYl9jaGF0Mg');;}
+$("#add_chat_btn").click(function(evt) {
+	addChat();	
+	//alert("Add chat btn");
+	//Server.addChat($("#message_textarea_input").val());			
+});
+$("#whatsChatyeoBtn").click(function(evt) {
+	//alert("Whats chatyeo btn");
+	//Server.whatsChatyeo();	
+});
+$("#liveChatyeoBtn").click(function(evt) {
+	//alert("Live chatyeo btn");
+	$('#searchchatyeo').hide();
+	$('#live_chatyeo_content').show();
+	//Server.setLive();	
+});
+$("#pauseChatyeoBtn").click(function(evt) {
+	//alert("Pause chatyeo btn");
+	//Server.setPaused();
+});
+$("#searchChatyeoBtn").click(function(evt) {
+	//alert("Search chatyeo btn");
+	$('#live_chatyeo_content').hide();
+	$('#searchchatyeo').show();
+	//Server.setPaused();	
+});
+</script>
+
+<div id="Twitter" style="visibility: hidden;"><div class="twitter-resultreturn" onClick="client.Popup('Twitter',0);"><img class="profileimg" src="courtney_normal.asc"><p>cortneyhitt:"use somebody" kings of leon...</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',1);"><img class="profileimg" src="JHAN_normal.asc"><p>johnantanderson:broke down and got the kings of leon. genius</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',2);"><img class="profileimg" src="scotty_normal.asc"><p>ressm: time to blast kings of leon...and figure out what to do w all this free time!!!</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',3);"><img class="profileimg" src="koll_over_normal.asc"><p>Kollover:
+is so haps she just got KINGS OF LEON BOXEDit comes with a poster i
+think so there is another one to the collection in my room</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',4);"><img class="profileimg" src="green_thom_hall.asc"><p>Thomhall: Remember the first Kings of Leon album Youth and Young manhood? it's still fucking good. #musicmonday #kol</p></div><div class="twitter-resultreturn" onClick="client.Popup('Twitter',5);"><img class="profileimg" src="kol_fan_normal.asc"><p>rebyramalho: She took my heart. I think she took my soul. Kings of Leon - Closer</p></div></div>
+<div id="TextFindings" style="visibility: hidden;"><div class="text-resultreturn" onClick="client.Popup('TextFinding',0);">
+<h3>Lollapalooza taps Kings of Leon, Jane's Addiction | Entertainment ...</h3>
+<p>NEW YORK (Billboard) - Kings of Leon will be among the headliners of
+this year's Lollapalooza and Austin City Limits festivals, Billboard
+sources have ...</p>
+</div>
+<div class="text-resultreturn" onClick="client.Popup('TextFinding',1);">
+<h3>Kings of Leon-Wikipedia the free encyclopedia</h3>
+<p>Kings of Leon is an alternative rock band from Nashville, Tennessee
+formed in 2000 by the brothers Caleb Followill (lead vocals and rhythm
+guitar), ...</p>
+</div>
+<div class="text-resultreturn" onClick="client.Popup('TextFinding',2);">
+<h3>Kings of Leon Official Store | Featured Items</h3>
+<p>Official Kings of Leon merchandise. The largest and latest selection of t-shirts, gear and merchandise from fanfire.com.</p>
+</div>
+<div class="text-resultreturn" onClick="client.Popup('TextFinding',3);">
+<h3>Kings of Leon - MySpace</h3>
+<p>Kings of Leon's official MySpace page with photos, music downloads,
+tour dates, blog entries, and a chance for fans to post messages to the
+band.</p>
+</div>
+<div class="text-resultreturn" onClick="client.Popup('TextFinding',4);">
+<h3>Kings Of Leon : Rolling Stone</h3>
+<p>Rolling Stone gives you total Kings Of Leon coverage including free
+music, videos, photos, music news and exclusive Rolling Stone articles..</p>
+</div>
+<div class="text-resultreturn" onClick="client.Popup('TextFinding',5);">
+<h3>Kings of Leon Concert Tickets | TicketsNow.com</h3>
+<p>100% Money back guarantee on Kings of Leon Concert Tickets at TicketsNow.com - Official Site.</p>
+</div>
+</div>
+<div id="Images" style="visibility: hidden;"><div class="image-resultreturn" onClick="client.Popup('Image',0);">
+<img class="profileimg" src="img_return-025.asc"><p>Mojo Cover</p></div><div class="image-resultreturn" onClick="client.Popup('Image',1);">
+<img class="profileimg" src="img_return-010.asc"><p>Only by the Night</p></div><div class="image-resultreturn" onClick="client.Popup('Image',2);">
+<img class="profileimg" src="img_return-011.asc"><p>Kings of Leon in Concert</p></div><div class="image-resultreturn" onClick="client.Popup('Image',3);">
+<img class="profileimg" src="img_return-012.asc"><p>Kings of Leon</p></div></div>
+<div id="Books" style="visibility: hidden;">
+</div>
+<div id="WayFair" style="visibility: hidden;">
+</div>
+<div id="Sites" style="visibility: hidden;">
+</div>
+<div id="Docs" style="visibility: hidden;">
+</div>
+<div id="Video" style="visibility: hidden;"><div class="video-resultreturn" onClick="client.Popup('Video',0);"><p class="title">The Bucket</p><img src="img_return-007.asc" class="screenshot"></div><div class="video-resultreturn" onClick="client.Popup('Video',1);"><p class="title">On Call</p><img src="img_return-005.asc" class="screenshot"></div><div class="video-resultreturn" onClick="client.Popup('Video',2);"><p class="title">Kings of Leon-Fans</p><img src="img_return-015.asc" class="screenshot"></div><div class="video-resultreturn" onClick="client.Popup('Video',3);"><p class="title">Soft</p><img src="img_return-016.asc" class="screenshot"></div></div>
+<div id="YahooAnswers" style="visibility: hidden;">
+</div>
+</body></html>
