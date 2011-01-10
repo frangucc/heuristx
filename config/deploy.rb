@@ -10,14 +10,15 @@ set :repository,  "git@github.com:frangucc/heuristx.git"
 
 set :scm, :git
 
-role :web, "heuristx.com"                          # Your HTTP server, Apache/etc
-role :app, "heuristx.com"                          # This may be the same as your `Web` server
-role :db,  "", :primary => true # This is where Rails migrations will run
-
 set :user, "deploy"
 set :use_sudo, false
 
-set :deploy_to, "/var/www/rails_apps/#{ app_name }"
+default_run_options[:pty] = true
+
+ssh_options[:keys] = [File.join(ENV['HOME'],'.ssh','id_rsa')]
+
+set :deploy_to, "/var/www/rails_apps/#{ application }"
+set :deploy_via, :remote_cache
 
 
 namespace :deploy do
