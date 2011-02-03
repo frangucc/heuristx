@@ -18,7 +18,7 @@ default_run_options[:pty] = true
 ssh_options[:keys] = [File.join(ENV['HOME'],'.ssh','id_rsa')]
 
 set :deploy_to, "/var/www/rails_apps/#{ application }"
-set :deploy_via
+
 
 
 namespace :deploy do
